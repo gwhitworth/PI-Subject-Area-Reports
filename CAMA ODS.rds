@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CAMA ODS">
+  <ConnectionProperties>
+    <Extension>OLEDB</Extension>
+    <ConnectString>Provider=MSDAORA.1;Data Source=IASCONV.BCGOV</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>5a94feb1-2261-42c6-b986-428b39d36f79</DataSourceID>
+</RptDataSource>

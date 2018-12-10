@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Oracle ODS">
+  <ConnectionProperties>
+    <Extension>ORACLE</Extension>
+    <ConnectString>(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=bcang1.bca.bcgov)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=IASCONV)))
+</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>3fc2e50f-8e76-4a3b-a73c-404e6273f8bf</DataSourceID>
+</RptDataSource>

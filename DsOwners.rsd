@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>EDW</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@p_FolioNumberDisplay">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@p_RollYear">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT        b.dimRollYear_SK, b.dimFolio_SK AS dimProperty_SK, b.[Roll Year], p.[Folio Number], p.[Folio Number Display], addr.[Full Address], nm.[Full Name], b.[Party Type], b.[Percent Of Ownership For Primary Owner], 
+                         b.[Primary Owner Flag], b.[Equity Type]
+FROM            EDW.edw.bridgeOwnerFolioAddress AS b INNER JOIN
+                         EDW.edw.dimName AS nm ON nm.dimName_SK = b.dimName_SK INNER JOIN
+                         EDW.edw.dimAddress AS addr ON addr.dimAddress_SK = b.dimAddress_SK INNER JOIN
+                         EDW.edw.dimProperty AS p ON p.dimProperty_SK = b.dimProperty_SK
+WHERE p.[Folio Number Display] = @p_FolioNumberDisplay
+AND b.[Roll Year] = @p_RollYear</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="dimRollYear_SK">
+        <DataField>dimRollYear_SK</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="dimProperty_SK">
+        <DataField>dimProperty_SK</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Roll_Year">
+        <DataField>Roll Year</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Folio_Number">
+        <DataField>Folio Number</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Full_Address">
+        <DataField>Full Address</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Folio_Number_Display">
+        <DataField>Folio Number Display</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Full_Name">
+        <DataField>Full Name</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Party_Type">
+        <DataField>Party Type</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Percent_Of_Ownership_For_Primary_Owner">
+        <DataField>Percent Of Ownership For Primary Owner</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Primary_Owner_Flag">
+        <DataField>Primary Owner Flag</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Equity_Type">
+        <DataField>Equity Type</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

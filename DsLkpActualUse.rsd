@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>OLAP</DataSourceReference>
+      <CommandText>SELECT  { } ON COLUMNS,
+{ 
+(
+[Actual Use].[Actual Use].ALLMEMBERS 
+) 
+} ON ROWS 
+FROM [Property Inventory Roll Summary]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="ID__xml_version__1_0__encoding__utf_8____Field_xmlns_xsi__http___www_w3_org_2001_XMLSchema_instance__xmlns_xsd__http___www_w3_org_2001_XMLSchema__xsi_type__Level__UniqueName___Actual_Use___Actual_Use___Actual_Use_____">
+        <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Actual Use].[Actual Use].[Actual Use]" /&gt;</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
