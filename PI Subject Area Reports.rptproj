@@ -155,6 +155,10 @@
       <FullPath>Residential Inventory - All Measures - OLAP - backup5.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Residential Inventory - All Measures - OLAP.rdl</Name>
+      <FullPath>Residential Inventory - All Measures - OLAP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Residential Inventory - All Measures AJN - backup1.rdl</Name>
       <FullPath>Residential Inventory - All Measures AJN - backup1.rdl</FullPath>
     </ProjectItem>
@@ -191,8 +195,8 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Residential Inventory - All Measures - OLAP.rdl</Name>
-      <FullPath>Residential Inventory - All Measures - OLAP.rdl</FullPath>
+      <Name>Residential Inventory - All Measures - OLAP-GW.rdl</Name>
+      <FullPath>Residential Inventory - All Measures - OLAP-GW.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
