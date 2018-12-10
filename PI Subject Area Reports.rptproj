@@ -194,10 +194,6 @@
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Residential Inventory - All Measures - OLAP-GW.rdl</Name>
-      <FullPath>Residential Inventory - All Measures - OLAP-GW.rdl</FullPath>
-    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
