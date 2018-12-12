@@ -21,7 +21,7 @@
             <Value>=Parameters!AssessmentGeographyAreaCode.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText> SELECT NON EMPTY { [Measures].[Land Total Acres] } ON COLUMNS, NON EMPTY { ([Property].[Roll Year].[Roll Year].ALLMEMBERS * [Assessment Geography].[Area Code].[Area Code].ALLMEMBERS * [Assessment Geography].[Jurisdiction Code].[Jurisdiction Code].ALLMEMBERS * [Property].[Roll Number].[Roll Number].ALLMEMBERS * [Assessment Geography].[Neighbourhood Code].[Neighbourhood Code].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Manual Class].[Stories].[Stories].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@AssessmentGeographyAreaCode, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@RollYearRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])) WHERE ( IIF( STRTOSET(@RollYearRollYear, CONSTRAINED).Count = 1, STRTOSET(@RollYearRollYear, CONSTRAINED), [Roll Year].[Roll Year].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText> SELECT NON EMPTY { [Measures].[Net Other Total Value], [Measures].[Net General Total Value], [Measures].[Actual Total Value], [Measures].[Land Total Acres], [Measures].[Outbuilding Count], [Measures].[Number Half Bathrooms], [Measures].[Number Full Bathrooms], [Measures].[Number Bedrooms], [Measures].[Net School Total Value] } ON COLUMNS, NON EMPTY { ([Property].[Roll Year].[Roll Year].ALLMEMBERS * [Assessment Geography].[Area Code].[Area Code].ALLMEMBERS * [Assessment Geography].[Jurisdiction Code].[Jurisdiction Code].ALLMEMBERS * [Property].[Roll Number].[Roll Number].ALLMEMBERS * [Assessment Geography].[Neighbourhood Code].[Neighbourhood Code].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Manual Class].[Stories].[Stories].ALLMEMBERS * [Predominant Building].[Year Built].[Year Built].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS * [Manual Class].[Pool Flag].[Pool Flag].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@AssessmentGeographyAreaCode, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@RollYearRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])) WHERE ( IIF( STRTOSET(@RollYearRollYear, CONSTRAINED).Count = 1, STRTOSET(@RollYearRollYear, CONSTRAINED), [Roll Year].[Roll Year].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -117,6 +117,107 @@
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Predominant Building</DimensionName>
+                      <HierarchyName>Year Built</HierarchyName>
+                      <HierarchyUniqueName>[Predominant Building].[Year Built]</HierarchyUniqueName>
+                      <LevelName>Year Built</LevelName>
+                      <UniqueName>[Predominant Building].[Year Built].[Year Built]</UniqueName>
+                    </ID>
+                    <ItemCaption>Year Built</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Predominant Building</DimensionName>
+                      <HierarchyName>Effective Year</HierarchyName>
+                      <HierarchyUniqueName>[Predominant Building].[Effective Year]</HierarchyUniqueName>
+                      <LevelName>Effective Year</LevelName>
+                      <UniqueName>[Predominant Building].[Effective Year].[Effective Year]</UniqueName>
+                    </ID>
+                    <ItemCaption>Effective Year</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Manual Class</DimensionName>
+                      <HierarchyName>Pool Flag</HierarchyName>
+                      <HierarchyUniqueName>[Manual Class].[Pool Flag]</HierarchyUniqueName>
+                      <LevelName>Pool Flag</LevelName>
+                      <UniqueName>[Manual Class].[Pool Flag].[Pool Flag]</UniqueName>
+                    </ID>
+                    <ItemCaption>Pool Flag</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Number Bedrooms</MeasureName>
+                      <UniqueName>[Measures].[Number Bedrooms]</UniqueName>
+                    </ID>
+                    <ItemCaption>Number Bedrooms</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                    <DisplayFolder>Residential</DisplayFolder>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Number Full Bathrooms</MeasureName>
+                      <UniqueName>[Measures].[Number Full Bathrooms]</UniqueName>
+                    </ID>
+                    <ItemCaption>Number Full Bathrooms</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                    <DisplayFolder>Residential</DisplayFolder>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Number Half Bathrooms</MeasureName>
+                      <UniqueName>[Measures].[Number Half Bathrooms]</UniqueName>
+                    </ID>
+                    <ItemCaption>Number Half Bathrooms</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                    <DisplayFolder>Residential</DisplayFolder>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Outbuilding Count</MeasureName>
+                      <UniqueName>[Measures].[Outbuilding Count]</UniqueName>
+                    </ID>
+                    <ItemCaption>Outbuilding Count</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                    <DisplayFolder>Outbuilding</DisplayFolder>
+                  </Item>
+                  <Item>
                     <ID xsi:type="Measure">
                       <MeasureName>Land Total Acres</MeasureName>
                       <UniqueName>[Measures].[Land Total Acres]</UniqueName>
@@ -132,6 +233,70 @@
                     <FormattedValue>true</FormattedValue>
                     <FormatString>true</FormatString>
                     <DisplayFolder>Land</DisplayFolder>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Actual Total Value</MeasureName>
+                      <UniqueName>[Measures].[Actual Total Value]</UniqueName>
+                    </ID>
+                    <ItemCaption>Actual Total Value</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Net General Total Value</MeasureName>
+                      <UniqueName>[Measures].[Net General Total Value]</UniqueName>
+                    </ID>
+                    <ItemCaption>Net General Total Value</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Net School Total Value</MeasureName>
+                      <UniqueName>[Measures].[Net School Total Value]</UniqueName>
+                    </ID>
+                    <ItemCaption>Net School Total Value</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Net Other Total Value</MeasureName>
+                      <UniqueName>[Measures].[Net Other Total Value]</UniqueName>
+                    </ID>
+                    <ItemCaption>Net Other Total Value</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
                   </Item>
                 </Items>
               </Select>
@@ -170,7 +335,7 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Land Total Acres] } ON COLUMNS, NON EMPTY { ([Property].[Roll Year].[Roll Year].ALLMEMBERS * [Assessment Geography].[Area Code].[Area Code].ALLMEMBERS * [Assessment Geography].[Jurisdiction Code].[Jurisdiction Code].ALLMEMBERS * [Property].[Roll Number].[Roll Number].ALLMEMBERS * [Assessment Geography].[Neighbourhood Code].[Neighbourhood Code].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Manual Class].[Stories].[Stories].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@AssessmentGeographyAreaCode, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@RollYearRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])) WHERE ( IIF( STRTOSET(@RollYearRollYear, CONSTRAINED).Count = 1, STRTOSET(@RollYearRollYear, CONSTRAINED), [Roll Year].[Roll Year].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Net Other Total Value], [Measures].[Net General Total Value], [Measures].[Actual Total Value], [Measures].[Land Total Acres], [Measures].[Outbuilding Count], [Measures].[Number Half Bathrooms], [Measures].[Number Full Bathrooms], [Measures].[Number Bedrooms], [Measures].[Net School Total Value] } ON COLUMNS, NON EMPTY { ([Property].[Roll Year].[Roll Year].ALLMEMBERS * [Assessment Geography].[Area Code].[Area Code].ALLMEMBERS * [Assessment Geography].[Jurisdiction Code].[Jurisdiction Code].ALLMEMBERS * [Property].[Roll Number].[Roll Number].ALLMEMBERS * [Assessment Geography].[Neighbourhood Code].[Neighbourhood Code].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Manual Class].[Stories].[Stories].ALLMEMBERS * [Predominant Building].[Year Built].[Year Built].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS * [Manual Class].[Pool Flag].[Pool Flag].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@AssessmentGeographyAreaCode, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@RollYearRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])) WHERE ( IIF( STRTOSET(@RollYearRollYear, CONSTRAINED).Count = 1, STRTOSET(@RollYearRollYear, CONSTRAINED), [Roll Year].[Roll Year].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions>
                 <ParameterDefinition>
                   <Name>RollYearRollYear</Name>
@@ -245,8 +410,52 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Manual Class].[Stories].[Stories]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Year_Built">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Predominant Building].[Year Built].[Year Built]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Land_Total_Acres">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Land Total Acres]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Effective_Year">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Predominant Building].[Effective Year].[Effective Year]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pool_Flag">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Manual Class].[Pool Flag].[Pool Flag]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Number_Bedrooms">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Number Bedrooms]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Number_Full_Bathrooms">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Number Full Bathrooms]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Number_Half_Bathrooms">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Number Half Bathrooms]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Outbuilding_Count">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Outbuilding Count]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Actual_Total_Value">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Actual Total Value]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Net_General_Total_Value">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Net General Total Value]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Net_School_Total_Value">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Net School Total Value]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Net_Other_Total_Value">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Net Other Total Value]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
