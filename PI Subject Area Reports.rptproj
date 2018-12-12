@@ -175,6 +175,10 @@
       <FullPath>Residential Inventory - All Measures OLAP - Region.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</Name>
+      <FullPath>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Roll Detail.rdl</Name>
       <FullPath>Roll Detail.rdl</FullPath>
     </ProjectItem>
@@ -195,8 +199,8 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</Name>
-      <FullPath>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</FullPath>
+      <Name>Building Information Extract.rdl</Name>
+      <FullPath>Building Information Extract.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
