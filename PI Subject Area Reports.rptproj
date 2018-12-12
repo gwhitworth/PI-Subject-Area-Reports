@@ -63,6 +63,10 @@
   </DataSets>
   <Reports>
     <ProjectItem>
+      <Name>Building Information Extract.rdl</Name>
+      <FullPath>Building Information Extract.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Copy (2) of Better - Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Copy (2) of Better - Residential Inventory - All Measures OLAP.rdl</FullPath>
     </ProjectItem>
@@ -199,8 +203,8 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Building Information Extract.rdl</Name>
-      <FullPath>Building Information Extract.rdl</FullPath>
+      <Name>Folio Listing.rdl</Name>
+      <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -210,7 +214,7 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2016</TargetServerVersion>
-        <TargetServerURL>https://businessanalyticssystem-test.bcassessment.ca/ReportServer</TargetServerURL>
+        <TargetServerURL>https://businessanalyticssystem.bcassessment.ca/ReportServer</TargetServerURL>
         <TargetFolder>Enterprise/Assessment (Internal)/Rolls and Notices</TargetFolder>
         <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
