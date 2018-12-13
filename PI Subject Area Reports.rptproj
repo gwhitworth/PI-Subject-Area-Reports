@@ -63,6 +63,10 @@
   </DataSets>
   <Reports>
     <ProjectItem>
+      <Name>Building Information Extract.rdl</Name>
+      <FullPath>Building Information Extract.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Copy (2) of Better - Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Copy (2) of Better - Residential Inventory - All Measures OLAP.rdl</FullPath>
     </ProjectItem>
@@ -113,6 +117,14 @@
     <ProjectItem>
       <Name>Folio Detail v2.rdl</Name>
       <FullPath>Folio Detail v2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Folio Detail v3.rdl</Name>
+      <FullPath>Folio Detail v3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Folio Listing.rdl</Name>
+      <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Good - Residential Inventory - All Measures OLAP.rdl</Name>
@@ -175,6 +187,10 @@
       <FullPath>Residential Inventory - All Measures OLAP - Region.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</Name>
+      <FullPath>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Roll Detail.rdl</Name>
       <FullPath>Roll Detail.rdl</FullPath>
     </ProjectItem>
@@ -194,10 +210,6 @@
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</Name>
-      <FullPath>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</FullPath>
-    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
@@ -206,7 +218,7 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2016</TargetServerVersion>
-        <TargetServerURL>https://businessanalyticssystem-test.bcassessment.ca/ReportServer</TargetServerURL>
+        <TargetServerURL>https://businessanalyticssystem.bcassessment.ca/ReportServer</TargetServerURL>
         <TargetFolder>Enterprise/Assessment (Internal)/Rolls and Notices</TargetFolder>
         <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
