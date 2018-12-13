@@ -210,10 +210,6 @@
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Junk.rdl</Name>
-      <FullPath>Junk.rdl</FullPath>
-    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
