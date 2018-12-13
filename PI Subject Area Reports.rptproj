@@ -119,6 +119,10 @@
       <FullPath>Folio Detail v2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Folio Detail v3.rdl</Name>
+      <FullPath>Folio Detail v3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Folio Listing.rdl</Name>
       <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
@@ -207,8 +211,8 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Folio Detail v3.rdl</Name>
-      <FullPath>Folio Detail v3.rdl</FullPath>
+      <Name>Junk.rdl</Name>
+      <FullPath>Junk.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
