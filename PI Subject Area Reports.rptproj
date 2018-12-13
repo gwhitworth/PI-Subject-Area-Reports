@@ -119,6 +119,10 @@
       <FullPath>Folio Detail v2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Folio Listing.rdl</Name>
+      <FullPath>Folio Listing.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Good - Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Good - Residential Inventory - All Measures OLAP.rdl</FullPath>
     </ProjectItem>
@@ -203,8 +207,8 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Folio Listing.rdl</Name>
-      <FullPath>Folio Listing.rdl</FullPath>
+      <Name>Folio Detail v3.rdl</Name>
+      <FullPath>Folio Detail v3.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
