@@ -159,6 +159,10 @@
       <FullPath>Report2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Report3.rdl</Name>
+      <FullPath>Report3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Residential Inventory - All Measures - OLAP - backup3.rdl</Name>
       <FullPath>Residential Inventory - All Measures - OLAP - backup3.rdl</FullPath>
     </ProjectItem>
@@ -215,8 +219,8 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report3.rdl</Name>
-      <FullPath>Report3.rdl</FullPath>
+      <Name>Residential Inventory Extract.rdl</Name>
+      <FullPath>Residential Inventory Extract.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
