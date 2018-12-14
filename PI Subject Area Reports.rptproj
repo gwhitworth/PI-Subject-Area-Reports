@@ -14,6 +14,10 @@
       <Name>OLAP.rds</Name>
       <FullPath>OLAP.rds</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>OLAP_DEV.rds</Name>
+      <FullPath>OLAP_DEV.rds</FullPath>
+    </ProjectItem>
   </DataSources>
   <DataSets>
     <ProjectItem>
@@ -209,6 +213,10 @@
     <ProjectItem>
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report3.rdl</Name>
+      <FullPath>Report3.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
