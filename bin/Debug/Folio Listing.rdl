@@ -1746,7 +1746,7 @@
                             <Actions>
                               <Action>
                                 <Drillthrough>
-                                  <ReportName>Folio Detail v3</ReportName>
+                                  <ReportName>Folio Detail</ReportName>
                                   <Parameters>
                                     <Parameter Name="p_RollYear">
                                       <Value>=Fields!Roll_Year.Value</Value>
@@ -2504,7 +2504,7 @@
             <Top>0.01958in</Top>
             <Left>0.01167in</Left>
             <Height>0.66792in</Height>
-            <Width>13.55312in</Width>
+            <Width>13.55311in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2525,7 +2525,6 @@
             <Image Name="BCALogo">
               <Source>Embedded</Source>
               <Value>BCA_BigBlueLogo</Value>
-              <Top>0in</Top>
               <Left>0.02209in</Left>
               <Height>0.37153in</Height>
               <Width>2.35069in</Width>
@@ -2587,7 +2586,6 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox10</rd:DefaultName>
-              <Top>0in</Top>
               <Left>12in</Left>
               <Height>0.25in</Height>
               <Width>0.44444in</Width>
@@ -2617,7 +2615,6 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Top>0in</Top>
               <Left>12.5in</Left>
               <Height>0.25in</Height>
               <Width>1in</Width>
