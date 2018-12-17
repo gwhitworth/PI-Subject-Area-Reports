@@ -76,7 +76,7 @@ ORDER BY [Full Name]</CommandText>
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Top>0.13542in</Top>
             <Height>0.29458in</Height>
-            <Width>9.15625in</Width>
+            <Width>8.03125in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -91,16 +91,16 @@ ORDER BY [Full Name]</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.60417in</Width>
+                  <Width>0.32292in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.86458in</Width>
+                  <Width>1.98958in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.58333in</Width>
+                  <Width>0.89583in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>5.10417in</Width>
+                  <Width>4.82292in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -506,7 +506,7 @@ ORDER BY [Full Name]</CommandText>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.43in</Top>
             <Height>0.43in</Height>
-            <Width>9.15625in</Width>
+            <Width>8.03125in</Width>
             <ZIndex>1</ZIndex>
             <Style />
           </Tablix>
@@ -514,7 +514,7 @@ ORDER BY [Full Name]</CommandText>
         <Height>0.86in</Height>
         <Style />
       </Body>
-      <Width>11.39583in</Width>
+      <Width>8.03125in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>

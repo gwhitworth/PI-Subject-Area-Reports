@@ -11,60 +11,69 @@
   </DataSources>
   <DataSets>
     <DataSet Name="DsOwners">
-      <SharedDataSet>
-        <SharedDataSetReference>DsOwners</SharedDataSetReference>
+      <Query>
+        <DataSourceName>EDW</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@p_FolioNumberDisplay">
-            <Value>=Parameters!p_FolioNumberDisplay.Value</Value>
+          <QueryParameter Name="@p_FolioNumber">
+            <Value>=Parameters!p_FolioNumber.Value</Value>
           </QueryParameter>
           <QueryParameter Name="@p_RollYear">
             <Value>=Parameters!p_RollYear.Value</Value>
           </QueryParameter>
         </QueryParameters>
-      </SharedDataSet>
+        <CommandText>SELECT b.[Roll Year],
+	  p.[Folio Number],
+	  addr.[Full Address],
+	  nm.[Full Name],
+	  pt.[Party Type Desc] AS  [Party Type],
+	  b.[Percent Of Ownership For Primary Owner],
+	  b.[Primary Owner Flag],
+	  eq.[Equity Type Desc] AS [Equity Type]
+   FROM EDW.edw.bridgeOwnerFolioAddress AS b
+	   INNER JOIN edw.edw.dimProperty p
+		  ON p.dimProperty_SK = b.dimFolio_SK
+	   INNER JOIN EDW.edw.dimName AS nm
+		  ON nm.dimName_SK = b.dimName_SK
+	   INNER JOIN EDW.edw.dimAddress AS addr
+		  ON addr.dimAddress_SK = b.dimAddress_SK
+	   INNER JOIN edw.edw.dimPartyType pt
+		  ON pt.dimPartyType_SK = b.dimPartyType_SK
+	   INNER JOIN edw.edw.dimEquityType eq
+		  ON eq.dimEquityType_SK = b.dimEquityType_SK
+   WHERE p.[Folio Number] = @p_FolioNumber
+   AND b.[Roll Year] = @p_RollYear</CommandText>
+      </Query>
       <Fields>
-        <Field Name="dimRollYear_SK">
-          <DataField>dimRollYear_SK</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="dimProperty_SK">
-          <DataField>dimProperty_SK</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="Roll_Year">
-          <DataField>Roll_Year</DataField>
+          <DataField>Roll Year</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Folio_Number">
-          <DataField>Folio_Number</DataField>
+          <DataField>Folio Number</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Full_Address">
-          <DataField>Full_Address</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Folio_Number_Display">
-          <DataField>Folio_Number_Display</DataField>
+          <DataField>Full Address</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Full_Name">
-          <DataField>Full_Name</DataField>
+          <DataField>Full Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Party_Type">
-          <DataField>Party_Type</DataField>
+          <DataField>Party Type</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Percent_Of_Ownership_For_Primary_Owner">
-          <DataField>Percent_Of_Ownership_For_Primary_Owner</DataField>
+          <DataField>Percent Of Ownership For Primary Owner</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="Primary_Owner_Flag">
-          <DataField>Primary_Owner_Flag</DataField>
+          <DataField>Primary Owner Flag</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Equity_Type">
-          <DataField>Equity_Type</DataField>
+          <DataField>Equity Type</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -93,7 +102,7 @@
             <rd:DefaultName>textbox1</rd:DefaultName>
             <Left>0.03125in</Left>
             <Height>0.2425in</Height>
-            <Width>5in</Width>
+            <Width>4in</Width>
             <Style>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -105,10 +114,10 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.70958in</Width>
+                  <Width>2.45833in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.79167in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -261,22 +270,69 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="Full_Address">
+                  <Group Name="Party_Type">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Full_Address.Value</GroupExpression>
+                      <GroupExpression>=Fields!Party_Type.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Full_Address.Value</Value>
+                      <Value>=Fields!Party_Type.Value</Value>
                     </SortExpression>
                   </SortExpressions>
+                  <TablixHeader>
+                    <Size>0.78125in</Size>
+                    <CellContents>
+                      <Textbox Name="Party_Type1">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!Party_Type.Value</Value>
+                                <Style>
+                                  <FontWeight>Normal</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <rd:DefaultName>Party_Type1</rd:DefaultName>
+                        <Style>
+                          <Border>
+                            <Color>White</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
                   <TablixMembers>
                     <TablixMember>
-                      <KeepWithGroup>After</KeepWithGroup>
-                    </TablixMember>
-                    <TablixMember>
-                      <Group Name="Details" />
+                      <Group Name="Full_Address">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!Full_Address.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!Full_Address.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixMembers>
+                        <TablixMember>
+                          <KeepWithGroup>After</KeepWithGroup>
+                        </TablixMember>
+                        <TablixMember>
+                          <Group Name="Details" />
+                        </TablixMember>
+                      </TablixMembers>
                     </TablixMember>
                   </TablixMembers>
                 </TablixMember>
@@ -285,7 +341,7 @@
             <DataSetName>DsOwners</DataSetName>
             <Top>0.2425in</Top>
             <Height>0.5in</Height>
-            <Width>3.70958in</Width>
+            <Width>4.03125in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -298,12 +354,8 @@
         <Height>0.7425in</Height>
         <Style />
       </Body>
-      <Width>5.11458in</Width>
+      <Width>4.03125in</Width>
       <Page>
-        <LeftMargin>1in</LeftMargin>
-        <RightMargin>1in</RightMargin>
-        <TopMargin>1in</TopMargin>
-        <BottomMargin>1in</BottomMargin>
         <Style />
       </Page>
     </ReportSection>
@@ -311,21 +363,11 @@
   <ReportParameters>
     <ReportParameter Name="p_RollYear">
       <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>2017</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Roll Year</Prompt>
+      <Prompt>p Roll Year</Prompt>
     </ReportParameter>
-    <ReportParameter Name="p_FolioNumberDisplay">
+    <ReportParameter Name="p_FolioNumber">
       <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>44-038-5010370025</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>Folio Number Display</Prompt>
+      <Prompt>p Folio Number</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
@@ -335,13 +377,13 @@
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
-          <RowIndex>0</RowIndex>
-          <ParameterName>p_RollYear</ParameterName>
+          <RowIndex>1</RowIndex>
+          <ParameterName>p_FolioNumber</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
-          <RowIndex>1</RowIndex>
-          <ParameterName>p_FolioNumberDisplay</ParameterName>
+          <RowIndex>0</RowIndex>
+          <ParameterName>p_RollYear</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

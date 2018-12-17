@@ -17,24 +17,24 @@
           <rd:DbType>Object</rd:DbType>
         </DataSetParameter>
       </DataSetParameters>
-      <CommandText>SELECT        b.dimRollYear_SK, b.dimFolio_SK AS dimProperty_SK, b.[Roll Year], p.[Folio Number], p.[Folio Number Display], addr.[Full Address], nm.[Full Name], b.[Party Type], b.[Percent Of Ownership For Primary Owner], 
-                         b.[Primary Owner Flag], b.[Equity Type]
-FROM            EDW.edw.bridgeOwnerFolioAddress AS b INNER JOIN
-                         EDW.edw.dimName AS nm ON nm.dimName_SK = b.dimName_SK INNER JOIN
-                         EDW.edw.dimAddress AS addr ON addr.dimAddress_SK = b.dimAddress_SK INNER JOIN
-                         EDW.edw.dimProperty AS p ON p.dimProperty_SK = b.dimProperty_SK
+      <CommandText>SELECT b.[Roll Year], 
+       p.[Folio Number], 
+       addr.[Full Address], 
+       nm.[Full Name], 
+       pt.[Party Type Desc] AS [Party Type], 
+       b.[Percent Of Ownership For Primary Owner], 
+       b.[Primary Owner Flag], 
+       eq.[Equity Type Desc] AS [Equity Type]
+FROM EDW.edw.bridgeOwnerFolioAddress AS b
+     INNER JOIN edw.edw.dimProperty p ON p.dimProperty_SK = b.dimFolio_SK
+     INNER JOIN EDW.edw.dimName AS nm ON nm.dimName_SK = b.dimName_SK
+     INNER JOIN EDW.edw.dimAddress AS addr ON addr.dimAddress_SK = b.dimAddress_SK
+     INNER JOIN edw.edw.dimPartyType pt ON pt.dimPartyType_SK = b.dimPartyType_SK
+     INNER JOIN edw.edw.dimEquityType eq ON eq.dimEquityType_SK = b.dimEquityType_SK
 WHERE p.[Folio Number Display] = @p_FolioNumberDisplay
-AND b.[Roll Year] = @p_RollYear</CommandText>
+      AND b.[Roll Year] = @p_RollYear;</CommandText>
     </Query>
     <Fields>
-      <Field Name="dimRollYear_SK">
-        <DataField>dimRollYear_SK</DataField>
-        <rd:TypeName>System.Int32</rd:TypeName>
-      </Field>
-      <Field Name="dimProperty_SK">
-        <DataField>dimProperty_SK</DataField>
-        <rd:TypeName>System.Int32</rd:TypeName>
-      </Field>
       <Field Name="Roll_Year">
         <DataField>Roll Year</DataField>
         <rd:TypeName>System.Int32</rd:TypeName>
@@ -45,10 +45,6 @@ AND b.[Roll Year] = @p_RollYear</CommandText>
       </Field>
       <Field Name="Full_Address">
         <DataField>Full Address</DataField>
-        <rd:TypeName>System.String</rd:TypeName>
-      </Field>
-      <Field Name="Folio_Number_Display">
-        <DataField>Folio Number Display</DataField>
         <rd:TypeName>System.String</rd:TypeName>
       </Field>
       <Field Name="Full_Name">
