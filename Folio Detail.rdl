@@ -623,7 +623,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
             <rd:DefaultName>Textbox29</rd:DefaultName>
             <Top>1.9643in</Top>
             <Left>0.04848in</Left>
-            <Height>0.25in</Height>
+            <Height>0.23168in</Height>
             <Width>1.595in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -803,7 +803,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>3.18368in</Top>
+            <Top>3.05868in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.84263in</Width>
@@ -835,8 +835,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox6</rd:DefaultName>
-            <Top>3.18368in</Top>
-            <Left>4.99336in</Left>
+            <Top>3.05868in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.84263in</Width>
             <ZIndex>8</ZIndex>
@@ -865,8 +865,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>3.93849in</Top>
-            <Left>4.99336in</Left>
+            <Top>3.81349in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>9</ZIndex>
@@ -897,8 +897,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>4.19784in</Top>
-            <Left>4.99336in</Left>
+            <Top>4.07284in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>10</ZIndex>
@@ -929,8 +929,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>4.45718in</Top>
-            <Left>4.99336in</Left>
+            <Top>4.33218in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>11</ZIndex>
@@ -961,8 +961,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>4.71653in</Top>
-            <Left>4.99336in</Left>
+            <Top>4.59153in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>12</ZIndex>
@@ -993,8 +993,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>5.23523in</Top>
-            <Left>4.99336in</Left>
+            <Top>5.11023in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>13</ZIndex>
@@ -1025,8 +1025,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
-            <Top>6.79132in</Top>
-            <Left>4.99336in</Left>
+            <Top>6.66632in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>14</ZIndex>
@@ -1057,8 +1057,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
-            <Top>7.04132in</Top>
-            <Left>4.99336in</Left>
+            <Top>6.91632in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>15</ZIndex>
@@ -1087,8 +1087,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox9</rd:DefaultName>
-            <Top>3.41979in</Top>
-            <Left>4.99336in</Left>
+            <Top>3.29479in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>16</ZIndex>
@@ -1117,7 +1117,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
-            <Top>6.79132in</Top>
+            <Top>6.66632in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -1147,7 +1147,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
-            <Top>6.53197in</Top>
+            <Top>6.40697in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -1177,7 +1177,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox21</rd:DefaultName>
-            <Top>6.27262in</Top>
+            <Top>6.14762in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -1207,7 +1207,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>4.45718in</Top>
+            <Top>4.33218in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -1607,19 +1607,16 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>SITUS_Full_Address</rd:DefaultName>
-            <Top>2.26542in</Top>
+            <Top>2.14042in</Top>
             <Left>0.04848in</Left>
             <Height>0.28125in</Height>
-            <Width>3.44277in</Width>
+            <Width>4.19277in</Width>
             <ZIndex>33</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Region_Hospital_District_Code2">
@@ -1639,10 +1636,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Region_Hospital_District_Code</rd:DefaultName>
-            <Top>4.45718in</Top>
+            <Top>4.33218in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>34</ZIndex>
             <Style>
               <Border>
@@ -1671,10 +1668,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Folio_Status</rd:DefaultName>
-            <Top>6.27262in</Top>
+            <Top>6.14762in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>35</ZIndex>
             <Style>
               <Border>
@@ -1703,10 +1700,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>BC_Transit_Flag</rd:DefaultName>
-            <Top>6.53197in</Top>
+            <Top>6.40697in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>36</ZIndex>
             <Style>
               <Border>
@@ -1735,10 +1732,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>BC_Hydro_Flag</rd:DefaultName>
-            <Top>6.79132in</Top>
+            <Top>6.66632in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>37</ZIndex>
             <Style>
               <Border>
@@ -1767,10 +1764,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Total_Living_Area</rd:DefaultName>
-            <Top>5.23523in</Top>
-            <Left>6.40962in</Left>
+            <Top>5.11023in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>38</ZIndex>
             <Style>
               <Border>
@@ -1799,10 +1796,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Number_Bedrooms</rd:DefaultName>
-            <Top>4.71653in</Top>
-            <Left>6.40962in</Left>
+            <Top>4.59153in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>39</ZIndex>
             <Style>
               <Border>
@@ -1831,10 +1828,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Number_Full_Bathrooms</rd:DefaultName>
-            <Top>3.93849in</Top>
-            <Left>6.40962in</Left>
+            <Top>3.81349in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>40</ZIndex>
             <Style>
               <Border>
@@ -1863,10 +1860,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Number_Half_Bathrooms</rd:DefaultName>
-            <Top>4.19784in</Top>
-            <Left>6.40962in</Left>
+            <Top>4.07284in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>41</ZIndex>
             <Style>
               <Border>
@@ -1895,10 +1892,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Effective_Year</rd:DefaultName>
-            <Top>7.04132in</Top>
-            <Left>6.40962in</Left>
+            <Top>6.91632in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>42</ZIndex>
             <Style>
               <Border>
@@ -1927,10 +1924,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Year_Built</rd:DefaultName>
-            <Top>6.79132in</Top>
-            <Left>6.40962in</Left>
+            <Top>6.66632in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>43</ZIndex>
             <Style>
               <Border>
@@ -1959,10 +1956,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Number_Half_Bathrooms</rd:DefaultName>
-            <Top>4.45718in</Top>
-            <Left>6.40962in</Left>
+            <Top>4.33218in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>44</ZIndex>
             <Style>
               <Border>
@@ -1989,7 +1986,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>3.41979in</Top>
+            <Top>3.29479in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2019,7 +2016,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>3.67914in</Top>
+            <Top>3.55414in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2049,7 +2046,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>3.93849in</Top>
+            <Top>3.81349in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2079,7 +2076,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>4.19784in</Top>
+            <Top>4.07284in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2109,7 +2106,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>4.71653in</Top>
+            <Top>4.59153in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2139,7 +2136,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>4.97588in</Top>
+            <Top>4.85088in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2169,7 +2166,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>5.23523in</Top>
+            <Top>5.11023in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2199,7 +2196,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>5.49458in</Top>
+            <Top>5.36958in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2229,7 +2226,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>5.75393in</Top>
+            <Top>5.62893in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2259,7 +2256,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>6.01327in</Top>
+            <Top>5.88827in</Top>
             <Left>0.02305in</Left>
             <Height>0.25in</Height>
             <Width>1.40404in</Width>
@@ -2289,8 +2286,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>3.67914in</Top>
-            <Left>4.99336in</Left>
+            <Top>3.55414in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>55</ZIndex>
@@ -2321,8 +2318,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>4.97588in</Top>
-            <Left>4.99336in</Left>
+            <Top>4.85088in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>56</ZIndex>
@@ -2353,8 +2350,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>5.49458in</Top>
-            <Left>4.99336in</Left>
+            <Top>5.36958in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>57</ZIndex>
@@ -2385,8 +2382,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>5.75393in</Top>
-            <Left>4.99336in</Left>
+            <Top>5.62893in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>58</ZIndex>
@@ -2417,8 +2414,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>6.01327in</Top>
-            <Left>4.99336in</Left>
+            <Top>5.88827in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>59</ZIndex>
@@ -2449,8 +2446,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>6.27262in</Top>
-            <Left>4.99336in</Left>
+            <Top>6.14762in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>60</ZIndex>
@@ -2481,8 +2478,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>6.53197in</Top>
-            <Left>4.99336in</Left>
+            <Top>6.40697in</Top>
+            <Left>5.99336in</Left>
             <Height>0.25in</Height>
             <Width>1.29543in</Width>
             <ZIndex>61</ZIndex>
@@ -2507,10 +2504,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Parameter>
             </Parameters>
             <OmitBorderOnPageBreak>true</OmitBorderOnPageBreak>
-            <Top>1.8393in</Top>
-            <Left>3.54681in</Left>
-            <Height>0.85132in</Height>
-            <Width>4.47402in</Width>
+            <Top>1.9643in</Top>
+            <Left>4.29681in</Left>
+            <Height>1.04945in</Height>
+            <Width>3.74198in</Width>
             <ZIndex>62</ZIndex>
             <Style>
               <Border>
@@ -2537,9 +2534,9 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox29</rd:DefaultName>
-            <Top>2.58834in</Top>
+            <Top>2.46334in</Top>
             <Left>0.04848in</Left>
-            <Height>0.25in</Height>
+            <Height>0.20833in</Height>
             <Width>1.595in</Width>
             <ZIndex>63</ZIndex>
             <Style>
@@ -2549,7 +2546,6 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
               <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
           <Textbox Name="Legal_Description">
@@ -2568,19 +2564,17 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Legal_Description</rd:DefaultName>
-            <Top>2.83834in</Top>
+            <Top>2.63001in</Top>
             <Left>0.04848in</Left>
-            <Height>0.30041in</Height>
-            <Width>3.24673in</Width>
+            <Height>0.25874in</Height>
+            <Width>4.19277in</Width>
             <ZIndex>64</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
               <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
+              <PaddingTop>1pt</PaddingTop>
             </Style>
           </Textbox>
           <Textbox Name="Tenure">
@@ -2600,10 +2594,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Tenure</rd:DefaultName>
-            <Top>4.19784in</Top>
+            <Top>4.07284in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>65</ZIndex>
             <Style>
               <Border>
@@ -2632,10 +2626,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Manual_Class</rd:DefaultName>
-            <Top>3.93849in</Top>
+            <Top>3.81349in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>66</ZIndex>
             <Style>
               <Border>
@@ -2754,10 +2748,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Actual_Use_Category</rd:DefaultName>
-            <Top>3.41979in</Top>
+            <Top>3.29479in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>70</ZIndex>
             <Style>
               <Border>
@@ -2784,10 +2778,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Actual_Use</rd:DefaultName>
-            <Top>3.67914in</Top>
+            <Top>3.55414in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>71</ZIndex>
             <Style>
               <Border>
@@ -2814,10 +2808,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Equity_Type</rd:DefaultName>
-            <Top>5.49458in</Top>
+            <Top>5.36958in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>72</ZIndex>
             <Style>
               <Border>
@@ -2844,10 +2838,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>PID</rd:DefaultName>
-            <Top>4.97588in</Top>
+            <Top>4.85088in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>73</ZIndex>
             <Style>
               <Border>
@@ -2874,10 +2868,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>4.71653in</Top>
+            <Top>4.59153in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>74</ZIndex>
             <Style>
               <Border>
@@ -2904,10 +2898,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>6.01327in</Top>
+            <Top>5.88827in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>75</ZIndex>
             <Style>
               <Border>
@@ -2936,10 +2930,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>5.49458in</Top>
-            <Left>6.40962in</Left>
+            <Top>5.36958in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>76</ZIndex>
             <Style>
               <Border>
@@ -2968,10 +2962,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>5.75393in</Top>
-            <Left>6.40962in</Left>
+            <Top>5.62893in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>77</ZIndex>
             <Style>
               <Border>
@@ -3000,10 +2994,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>6.01327in</Top>
-            <Left>6.40962in</Left>
+            <Top>5.88827in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>78</ZIndex>
             <Style>
               <Border>
@@ -3032,10 +3026,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>6.53197in</Top>
-            <Left>6.40962in</Left>
+            <Top>6.40697in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>79</ZIndex>
             <Style>
               <Border>
@@ -3062,10 +3056,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>ALR</rd:DefaultName>
-            <Top>5.23523in</Top>
+            <Top>5.11023in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>80</ZIndex>
             <Style>
               <Border>
@@ -3092,10 +3086,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Folio_Char_1</rd:DefaultName>
-            <Top>5.75393in</Top>
+            <Top>5.62893in</Top>
             <Left>1.54134in</Left>
             <Height>0.25in</Height>
-            <Width>2.2in</Width>
+            <Width>4.325in</Width>
             <ZIndex>81</ZIndex>
             <Style>
               <Border>
@@ -3124,10 +3118,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Storey_Height</rd:DefaultName>
-            <Top>3.41979in</Top>
-            <Left>6.40962in</Left>
+            <Top>3.29479in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>82</ZIndex>
             <Style>
               <Border>
@@ -3156,10 +3150,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox28</rd:DefaultName>
-            <Top>3.67914in</Top>
-            <Left>6.40962in</Left>
+            <Top>3.55414in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>83</ZIndex>
             <Style>
               <Border>
@@ -3180,7 +3174,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
                     <Value>=First(Fields!Property_Key.Value, "qryData")</Value>
                   </Parameter>
                 </Parameters>
-                <Height>0.42708in</Height>
+                <Top>0.125in</Top>
+                <Height>0.22917in</Height>
                 <Width>7.88657in</Width>
                 <Style>
                   <Border>
@@ -3195,7 +3190,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
             <KeepTogether>true</KeepTogether>
             <Top>7.41542in</Top>
             <Left>0.02305in</Left>
-            <Height>0.46925in</Height>
+            <Height>0.39583in</Height>
             <Width>7.88657in</Width>
             <ZIndex>84</ZIndex>
             <Style>
@@ -3213,7 +3208,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
                     <Value>=First(Fields!Property_Key.Value, "qryData")</Value>
                   </Parameter>
                 </Parameters>
-                <Height>0.19791in</Height>
+                <Top>0.125in</Top>
+                <Height>0.13542in</Height>
                 <Width>7.90962in</Width>
                 <Style>
                   <Border>
@@ -3226,9 +3222,9 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <BreakLocation>Start</BreakLocation>
             </PageBreak>
             <KeepTogether>true</KeepTogether>
-            <Top>7.99722in</Top>
+            <Top>7.87222in</Top>
             <Left>0in</Left>
-            <Height>0.26543in</Height>
+            <Height>0.30208in</Height>
             <Width>7.90962in</Width>
             <ZIndex>85</ZIndex>
             <Style>
@@ -3249,8 +3245,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
                     <Value>=Parameters!p_FolioNumber.Value</Value>
                   </Parameter>
                 </Parameters>
-                <Left>0.03875in</Left>
-                <Height>0.2859in</Height>
+                <Top>0.05604in</Top>
+                <Height>0.1609in</Height>
                 <Width>7.87087in</Width>
                 <Style>
                   <Border>
@@ -3263,9 +3259,9 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <BreakLocation>Start</BreakLocation>
             </PageBreak>
             <KeepTogether>true</KeepTogether>
-            <Top>8.30673in</Top>
+            <Top>8.25069in</Top>
             <Left>0in</Left>
-            <Height>0.33735in</Height>
+            <Height>0.27944in</Height>
             <Width>7.90962in</Width>
             <ZIndex>86</ZIndex>
             <Style>
@@ -3291,10 +3287,10 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Outbuilding_Count</rd:DefaultName>
-            <Top>6.27262in</Top>
-            <Left>6.40962in</Left>
+            <Top>6.14762in</Top>
+            <Left>7.40962in</Left>
             <Height>0.25in</Height>
-            <Width>1.5in</Width>
+            <Width>0.5in</Width>
             <ZIndex>87</ZIndex>
             <Style>
               <Border>
@@ -3339,13 +3335,13 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>8.81074in</Height>
+        <Height>8.58221in</Height>
         <Style />
       </Body>
-      <Width>8.03111in</Width>
+      <Width>8.03879in</Width>
       <Page>
         <PageHeader>
-          <Height>1.49945in</Height>
+          <Height>1.33278in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -3526,7 +3522,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Style>
             </Textbox>
             <Line Name="Line1">
-              <Top>1.40597in</Top>
+              <Top>1.28097in</Top>
               <Left>0.00514in</Left>
               <Height>0in</Height>
               <Width>8.02083in</Width>

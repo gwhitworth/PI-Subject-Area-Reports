@@ -114,7 +114,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.45833in</Width>
+                  <Width>2.70833in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.79167in</Width>
@@ -281,7 +281,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>0.78125in</Size>
+                    <Size>0.53125in</Size>
                     <CellContents>
                       <Textbox Name="Party_Type1">
                         <CanGrow>true</CanGrow>
