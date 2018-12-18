@@ -90,7 +90,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Current Owners: (as of 2020 working roll year)</Value>
+                    <Value>Current Owners: (as of ???? working roll year)</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
@@ -321,7 +321,6 @@
                             <PaddingRight>2pt</PaddingRight>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>

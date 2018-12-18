@@ -3188,7 +3188,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <BreakLocation>Start</BreakLocation>
             </PageBreak>
             <KeepTogether>true</KeepTogether>
-            <Top>7.43237in</Top>
+            <Top>6.93237in</Top>
             <Left>0.02305in</Left>
             <Height>0.39583in</Height>
             <Width>7.88657in</Width>
@@ -3222,7 +3222,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <BreakLocation>Start</BreakLocation>
             </PageBreak>
             <KeepTogether>true</KeepTogether>
-            <Top>7.88917in</Top>
+            <Top>7.38917in</Top>
             <Height>0.30208in</Height>
             <Width>7.90962in</Width>
             <ZIndex>85</ZIndex>
@@ -3258,7 +3258,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <BreakLocation>Start</BreakLocation>
             </PageBreak>
             <KeepTogether>true</KeepTogether>
-            <Top>8.26764in</Top>
+            <Top>8.39264in</Top>
             <Height>0.27944in</Height>
             <Width>7.90962in</Width>
             <ZIndex>86</ZIndex>
@@ -3331,8 +3331,56 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Property_Key.Value, "qryData")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.305in</Top>
+            <Left>5.99875in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>89</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Subreport Name="subActualValuesByExemptTaxCodeAndPropertyClass2">
+            <ReportName>Copy of ActualValuesByExemptTaxCodeAndPropertyClass</ReportName>
+            <Parameters>
+              <Parameter Name="p_PropertyKey">
+                <Value>=First(Fields!Property_Key.Value, "qryData")</Value>
+              </Parameter>
+            </Parameters>
+            <Top>7.89333in</Top>
+            <Left>0.02305in</Left>
+            <Height>0.13542in</Height>
+            <Width>7.90962in</Width>
+            <ZIndex>90</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
         </ReportItems>
-        <Height>8.59916in</Height>
+        <Height>9.17207in</Height>
         <Style />
       </Body>
       <Width>8.03879in</Width>
@@ -3666,12 +3714,12 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
+      <NumberOfColumns>2</NumberOfColumns>
+      <NumberOfRows>1</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
-          <ColumnIndex>0</ColumnIndex>
-          <RowIndex>1</RowIndex>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
           <ParameterName>p_FolioNumber</ParameterName>
         </CellDefinition>
         <CellDefinition>

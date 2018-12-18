@@ -143,6 +143,10 @@
       <FullPath>Folio Detail.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Folio Detail_Working.rdl</Name>
+      <FullPath>Folio Detail_Working.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Folio Listing.rdl</Name>
       <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
@@ -243,8 +247,8 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Folio Detail_Working.rdl</Name>
-      <FullPath>Folio Detail_Working.rdl</FullPath>
+      <Name>Copy of ActualValuesByExemptTaxCodeAndPropertyClass.rdl</Name>
+      <FullPath>Copy of ActualValuesByExemptTaxCodeAndPropertyClass.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
