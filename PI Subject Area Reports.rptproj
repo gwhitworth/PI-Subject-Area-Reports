@@ -25,6 +25,10 @@
       <FullPath>Copy of qryDataRoll.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>DsCurrentYear.rsd</Name>
+      <FullPath>DsCurrentYear.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DsFolioNumber.rsd</Name>
       <FullPath>DsFolioNumber.rsd</FullPath>
     </ProjectItem>
@@ -64,12 +68,16 @@
       <Name>qryRY.rsd</Name>
       <FullPath>qryRY.rsd</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>DsCurrentYear.rsd</Name>
-      <FullPath>DsCurrentYear.rsd</FullPath>
-    </ProjectItem>
   </DataSets>
   <Reports>
+    <ProjectItem>
+      <Name>ActualValuesByExemptTaxCodeAndPropertyClass.rdl</Name>
+      <FullPath>ActualValuesByExemptTaxCodeAndPropertyClass.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AllOwnersByPropertyKey.rdl</Name>
+      <FullPath>AllOwnersByPropertyKey.rdl</FullPath>
+    </ProjectItem>
     <ProjectItem>
       <Name>Building Information Extract.rdl</Name>
       <FullPath>Building Information Extract.rdl</FullPath>
@@ -131,12 +139,20 @@
       <FullPath>Folio Detail v3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Folio Detail.rdl</Name>
+      <FullPath>Folio Detail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Folio Listing.rdl</Name>
       <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Good - Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Good - Residential Inventory - All Measures OLAP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MinorTaxingJursidictionsByPropertyKey.rdl</Name>
+      <FullPath>MinorTaxingJursidictionsByPropertyKey.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>old - Residential Inventory - All Measures OLAP v1.rdl</Name>
@@ -227,20 +243,8 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>ActualValuesByExemptTaxCodeAndPropertyClass.rdl</Name>
-      <FullPath>ActualValuesByExemptTaxCodeAndPropertyClass.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>AllOwnersByPropertyKey.rdl</Name>
-      <FullPath>AllOwnersByPropertyKey.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Folio Detail.rdl</Name>
-      <FullPath>Folio Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>MinorTaxingJursidictionsByPropertyKey.rdl</Name>
-      <FullPath>MinorTaxingJursidictionsByPropertyKey.rdl</FullPath>
+      <Name>Folio Detail_Working.rdl</Name>
+      <FullPath>Folio Detail_Working.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
