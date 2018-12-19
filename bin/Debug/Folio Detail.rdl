@@ -3258,7 +3258,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <BreakLocation>Start</BreakLocation>
             </PageBreak>
             <KeepTogether>true</KeepTogether>
-            <Top>8.39264in</Top>
+            <Top>7.76764in</Top>
             <Height>0.27944in</Height>
             <Width>7.90962in</Width>
             <ZIndex>86</ZIndex>
@@ -3362,7 +3362,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>9.17207in</Height>
+        <Height>8.15124in</Height>
         <Style />
       </Body>
       <Width>8.03879in</Width>
@@ -3662,7 +3662,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>2017</Value>
+          <Value>2018</Value>
         </Values>
       </DefaultValue>
       <Prompt>Roll Year</Prompt>

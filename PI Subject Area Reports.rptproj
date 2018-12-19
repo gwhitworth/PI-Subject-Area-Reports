@@ -79,6 +79,10 @@
       <FullPath>AllOwnersByPropertyKey.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>BobsParameterExample.rdl</Name>
+      <FullPath>BobsParameterExample.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Building Information Extract.rdl</Name>
       <FullPath>Building Information Extract.rdl</FullPath>
     </ProjectItem>
@@ -195,10 +199,6 @@
       <FullPath>Report4.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Working Actual Values.rdl</Name>
-      <FullPath>Working Actual Values.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Residential Inventory - All Measures - OLAP - backup3.rdl</Name>
       <FullPath>Residential Inventory - All Measures - OLAP - backup3.rdl</FullPath>
     </ProjectItem>
@@ -257,6 +257,14 @@
     <ProjectItem>
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Working Actual Values.rdl</Name>
+      <FullPath>Working Actual Values.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AllValuesByPropertySubClass.rdl</Name>
+      <FullPath>AllValuesByPropertySubClass.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
