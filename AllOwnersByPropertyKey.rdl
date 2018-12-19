@@ -143,7 +143,7 @@ ORDER BY [Full Name]</CommandText>
                             <LeftBorder>
                               <Style>Solid</Style>
                             </LeftBorder>
-                            <BackgroundColor>LightBlue</BackgroundColor>
+                            <BackgroundColor>LightSteelBlue</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -186,7 +186,7 @@ ORDER BY [Full Name]</CommandText>
                             <LeftBorder>
                               <Style>Solid</Style>
                             </LeftBorder>
-                            <BackgroundColor>LightBlue</BackgroundColor>
+                            <BackgroundColor>LightSteelBlue</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -229,7 +229,7 @@ ORDER BY [Full Name]</CommandText>
                             <LeftBorder>
                               <Style>Solid</Style>
                             </LeftBorder>
-                            <BackgroundColor>LightBlue</BackgroundColor>
+                            <BackgroundColor>LightSteelBlue</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -272,7 +272,7 @@ ORDER BY [Full Name]</CommandText>
                             <LeftBorder>
                               <Style>Solid</Style>
                             </LeftBorder>
-                            <BackgroundColor>LightBlue</BackgroundColor>
+                            <BackgroundColor>LightSteelBlue</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>

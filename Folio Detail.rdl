@@ -3244,7 +3244,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
                     <Value>=Parameters!p_FolioNumber.Value</Value>
                   </Parameter>
                 </Parameters>
-                <Top>0.05604in</Top>
+                <Top>0.125in</Top>
                 <Height>0.1609in</Height>
                 <Width>7.87087in</Width>
                 <Style>
@@ -3258,8 +3258,8 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <BreakLocation>Start</BreakLocation>
             </PageBreak>
             <KeepTogether>true</KeepTogether>
-            <Top>7.76764in</Top>
-            <Height>0.27944in</Height>
+            <Top>8.01764in</Top>
+            <Height>0.2859in</Height>
             <Width>7.90962in</Width>
             <ZIndex>86</ZIndex>
             <Style>
@@ -3331,38 +3331,37 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox1">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
+          <Rectangle Name="Rectangle4">
+            <ReportItems>
+              <Subreport Name="SubAllValuesByPropertySubClass">
+                <ReportName>AllValuesByPropertySubClass</ReportName>
+                <Parameters>
+                  <Parameter Name="p_PropertyKey">
                     <Value>=First(Fields!Property_Key.Value, "qryData")</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.305in</Top>
-            <Left>5.99875in</Left>
-            <Height>0.25in</Height>
-            <Width>1in</Width>
+                  </Parameter>
+                </Parameters>
+                <Height>0.13542in</Height>
+                <Width>7.90962in</Width>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                </Style>
+              </Subreport>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>7.81in</Top>
+            <Height>0.1875in</Height>
+            <Width>7.90962in</Width>
             <ZIndex>89</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
-          </Textbox>
+          </Rectangle>
         </ReportItems>
-        <Height>8.15124in</Height>
+        <Height>8.39083in</Height>
         <Style />
       </Body>
       <Width>8.03879in</Width>
@@ -3666,6 +3665,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
         </Values>
       </DefaultValue>
       <Prompt>Roll Year</Prompt>
+      <Hidden>true</Hidden>
       <UsedInQuery>True</UsedInQuery>
     </ReportParameter>
     <ReportParameter Name="p_FolioNumber">
@@ -3676,22 +3676,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
         </Values>
       </DefaultValue>
       <Prompt>Folio Number</Prompt>
-      <ValidValues>
-        <ParameterValues>
-          <ParameterValue>
-            <Value>0677107188025</Value>
-            <Label>2 folio char 1 alr</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>01308540796010</Value>
-            <Label>default working</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>0677107188025</Value>
-            <Label>Tax Excemptions</Label>
-          </ParameterValue>
-        </ParameterValues>
-      </ValidValues>
+      <Hidden>true</Hidden>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
