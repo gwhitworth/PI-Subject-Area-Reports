@@ -107,6 +107,10 @@
       <FullPath>Copy (5) of Residential Inventory - All Measures OLAP.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Copy of ActualValuesByExemptTaxCodeAndPropertyClass.rdl</Name>
+      <FullPath>Copy of ActualValuesByExemptTaxCodeAndPropertyClass.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Copy of Better - Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Copy of Better - Residential Inventory - All Measures OLAP.rdl</FullPath>
     </ProjectItem>
@@ -187,6 +191,14 @@
       <FullPath>Report3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Report4.rdl</Name>
+      <FullPath>Report4.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Working Actual Values.rdl</Name>
+      <FullPath>Working Actual Values.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Residential Inventory - All Measures - OLAP - backup3.rdl</Name>
       <FullPath>Residential Inventory - All Measures - OLAP - backup3.rdl</FullPath>
     </ProjectItem>
@@ -245,10 +257,6 @@
     <ProjectItem>
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy of ActualValuesByExemptTaxCodeAndPropertyClass.rdl</Name>
-      <FullPath>Copy of ActualValuesByExemptTaxCodeAndPropertyClass.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

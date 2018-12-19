@@ -81,7 +81,7 @@
         <DataSourceName>OLTP</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="PropertyPropertyKey">
-            <Value>=Parameters!PropertyPropertyKey.Value</Value>
+            <Value>=Parameters!p_PropertyKey.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandText> SELECT NON EMPTY { [Measures].[Other Exemptions Land Value], [Measures].[Net Other Land Value], [Measures].[Net Other Building Value], [Measures].[Gross Other Total Value], [Measures].[Gross Other Land Value], [Measures].[School Exemptions Total Value], [Measures].[School Exemptions Land Value], [Measures].[School Exemptions Building Value], [Measures].[Net School Total Value], [Measures].[Net School Land Value], [Measures].[Net School Building Value], [Measures].[Gross School Total Value], [Measures].[Gross School Land Value], [Measures].[Gross School Building Value], [Measures].[Other Exemptions Total Value], [Measures].[Other Exemptions Building Value], [Measures].[Gross Other Building Value], [Measures].[Net General Total Value], [Measures].[Net General Land Value], [Measures].[Net General Building Value], [Measures].[General Exemptions Total Value], [Measures].[General Exemptions Land Value], [Measures].[General Exemptions Building Value], [Measures].[Gross General Total Value], [Measures].[Gross General Land Value], [Measures].[Gross General Building Value], [Measures].[Actual Total Value], [Measures].[Actual Land Value], [Measures].[Actual Building Value], [Measures].[Net Other Total Value] } ON COLUMNS, NON EMPTY { ([Property Class].[Property Sub Class Code].[Property Sub Class Code].ALLMEMBERS * [Property Class].[Property Sub Class Desc].[Property Sub Class Desc].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@PropertyPropertyKey, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary]) WHERE ( IIF( STRTOSET(@PropertyPropertyKey, CONSTRAINED).Count = 1, STRTOSET(@PropertyPropertyKey, CONSTRAINED), [Property].[Property Key].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
@@ -604,7 +604,7 @@
                     <Condition xsi:type="EqualTo">
                       <Members>
                         <Member>
-                          <MemberUniqueName>[Property].[Property Key].&amp;[5203469]</MemberUniqueName>
+                          <MemberUniqueName>[Property].[Property Key].&amp;[10]</MemberUniqueName>
                         </Member>
                       </Members>
                       <Parametrized>true</Parametrized>
@@ -624,7 +624,7 @@
                 <ParameterDefinition>
                   <Name>PropertyPropertyKey</Name>
                   <DefaultValues>
-                    <DefaultValue>[Property].[Property Key].&amp;[5203469]</DefaultValue>
+                    <DefaultValue>[Property].[Property Key].&amp;[10]</DefaultValue>
                   </DefaultValues>
                   <Caption>Property Key</Caption>
                   <HierarchyUniqueName>[Property].[Property Key]</HierarchyUniqueName>
@@ -773,6 +773,80 @@
       </Fields>
     </DataSet>
     <DataSet Name="PropertyPropertyKey">
+      <Query>
+        <DataSourceName>OLTP</DataSourceName>
+        <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Property].[Property Key].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Property].[Property Key].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Property].[Property Key].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Property].[Property Key].ALLMEMBERS ON ROWS FROM [Property Inventory Roll Summary]</CommandText>
+        <rd:DesignerState>
+          <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
+            <CommandType>MDX</CommandType>
+            <Type>Query</Type>
+            <QuerySpecification xsi:type="MDXQuerySpecification">
+              <Select>
+                <Items>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterCaption</MeasureName>
+                      <UniqueName>[Measures].[ParameterCaption]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterCaption</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterValue</MeasureName>
+                      <UniqueName>[Measures].[ParameterValue]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterValue</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>ParameterLevel</MeasureName>
+                      <UniqueName>[Measures].[ParameterLevel]</UniqueName>
+                    </ID>
+                    <ItemCaption>ParameterLevel</ItemCaption>
+                    <FormattedValue>true</FormattedValue>
+                  </Item>
+                </Items>
+              </Select>
+              <AutoExecute>false</AutoExecute>
+              <From>Property Inventory Roll Summary</From>
+              <Filter>
+                <FilterItems />
+              </Filter>
+              <Calculations />
+              <Aggregates />
+              <QueryProperties />
+            </QuerySpecification>
+            <Query>
+              <Statement>WITH MEMBER [Measures].[ParameterCaption] AS [Property].[Property Key].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Property].[Property Key].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Property].[Property Key].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Property].[Property Key].ALLMEMBERS ON ROWS FROM [Property Inventory Roll Summary]</Statement>
+              <ParameterDefinitions />
+            </Query>
+          </QueryDefinition>
+        </rd:DesignerState>
+        <rd:AutoGenerated>true</rd:AutoGenerated>
+        <rd:Hidden>true</rd:Hidden>
+      </Query>
+      <Fields>
+        <Field Name="ParameterCaption">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterCaption]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterValue">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterValue]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterLevel">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[ParameterLevel]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ParameterCaptionIndented">
+          <Value>=Space(3*Fields!ParameterLevel.Value) + Fields!ParameterCaption.Value</Value>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="PropertyPropertyKey1">
       <Query>
         <DataSourceName>OLTP</DataSourceName>
         <CommandText>WITH MEMBER [Measures].[ParameterCaption] AS [Property].[Property Key].CURRENTMEMBER.MEMBER_CAPTION MEMBER [Measures].[ParameterValue] AS [Property].[Property Key].CURRENTMEMBER.UNIQUENAME MEMBER [Measures].[ParameterLevel] AS [Property].[Property Key].CURRENTMEMBER.LEVEL.ORDINAL SELECT {[Measures].[ParameterCaption], [Measures].[ParameterValue], [Measures].[ParameterLevel]} ON COLUMNS , [Property].[Property Key].ALLMEMBERS ON ROWS FROM [Property Inventory Roll Summary]</CommandText>
@@ -3838,18 +3912,10 @@
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>[Property].[Property Key].&amp;[5203469]</Value>
+          <Value>[Property].[Property Key].&amp;[10]</Value>
         </Values>
       </DefaultValue>
       <Prompt>Property Key</Prompt>
-      <ValidValues>
-        <ParameterValues>
-          <ParameterValue>
-            <Value>5203469</Value>
-          </ParameterValue>
-        </ParameterValues>
-      </ValidValues>
-      <MultiValue>true</MultiValue>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>
