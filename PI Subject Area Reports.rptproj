@@ -259,10 +259,6 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Working Actual Values.rdl</Name>
-      <FullPath>Working Actual Values.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>AllValuesByPropertySubClass.rdl</Name>
       <FullPath>AllValuesByPropertySubClass.rdl</FullPath>
     </ProjectItem>
