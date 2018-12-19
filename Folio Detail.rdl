@@ -3336,7 +3336,7 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               <Subreport Name="SubAllValuesByPropertySubClass">
                 <ReportName>AllValuesByPropertySubClass</ReportName>
                 <Parameters>
-                  <Parameter Name="p_PropertyKey">
+                  <Parameter Name="p_PropertyKeyText">
                     <Value>=First(Fields!Property_Key.Value, "qryData")</Value>
                   </Parameter>
                 </Parameters>
@@ -3360,6 +3360,38 @@ where [Property].[Folio Number].&amp;[440385010370025]</Statement>
               </Border>
             </Style>
           </Rectangle>
+          <Textbox Name="Textbox1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!Property_Key.Value, "qryData")</Value>
+                    <Style>
+                      <Color>Red</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>0.47167in</Top>
+            <Left>5.78in</Left>
+            <Height>0.25in</Height>
+            <Width>1in</Width>
+            <ZIndex>90</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>8.39083in</Height>
         <Style />
