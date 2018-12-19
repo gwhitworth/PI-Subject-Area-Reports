@@ -62,7 +62,7 @@
             <Value>=Parameters!BedroomRangeBedroomsRange.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText> SELECT NON EMPTY { [Measures].[Net General Building Value], [Measures].[Net General Total Value], [Measures].[Gross General Total Value], [Measures].[Net Other Land Value], [Measures].[Gross School Building Value], [Measures].[School Exemptions Land Value], [Measures].[School Exemptions Building Value], [Measures].[School Exemptions Total Value], [Measures].[Net School Land Value], [Measures].[Net School Building Value], [Measures].[Gross Other Land Value], [Measures].[Net School Total Value], [Measures].[Avg Net School Value], [Measures].[Gross Other Building Value], [Measures].[Gross Other Total Value], [Measures].[Other Exemptions Land Value], [Measures].[Other Exemptions Building Value], [Measures].[Other Exemptions Total Value], [Measures].[Gross School Land Value], [Measures].[Avg Net Other Value], [Measures].[Gross School Total Value], [Measures].[General Exemptions Total Value], [Measures].[Net Other Building Value], [Measures].[Avg Net General Value], [Measures].[Roll Folio Count], [Measures].[Net General Land Value], [Measures].[Actual Building Value], [Measures].[Actual Total Value], [Measures].[Actual Land Value], [Measures].[Net Other Total Value], [Measures].[Gross General Land Value], [Measures].[Gross General Building Value], [Measures].[General Exemptions Land Value], [Measures].[General Exemptions Building Value], [Measures].[Avg Actual Value] } ON COLUMNS, NON EMPTY { ([Manual Class].[Main Building Flag].[Main Building Flag].ALLMEMBERS * [Roll Year].[Roll Year].[Roll Year].ALLMEMBERS * [Manual Class].[Pred Manual Class Flag].[Pred Manual Class Flag].ALLMEMBERS * [Current Roll Cycle].[Current Cycle Flag].[Current Cycle Flag].ALLMEMBERS * [Property].[Current Record Indicator].[Current Record Indicator].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualUseActualUse, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED), [Assessment Geography].[Roll Year].currentmember ), IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyArea, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyArea, CONSTRAINED), [Assessment Geography].[Area].currentmember ), IIF( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED), [Assessment Geography].[Jurisdiction].currentmember ), IIF( STRTOSET(@ActualUseActualUse, CONSTRAINED).Count = 1, STRTOSET(@ActualUseActualUse, CONSTRAINED), [Actual Use].[Actual Use].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText> SELECT NON EMPTY { [Measures].[Net General Land Value], [Measures].[Net General Total Value], [Measures].[Gross General Total Value], [Measures].[Net Other Land Value], [Measures].[Gross School Building Value], [Measures].[School Exemptions Land Value], [Measures].[School Exemptions Building Value], [Measures].[School Exemptions Total Value], [Measures].[Net School Land Value], [Measures].[Net School Building Value], [Measures].[Gross Other Land Value], [Measures].[Net School Total Value], [Measures].[Avg Net School Value], [Measures].[Gross Other Building Value], [Measures].[Gross Other Total Value], [Measures].[Other Exemptions Land Value], [Measures].[Other Exemptions Building Value], [Measures].[Other Exemptions Total Value], [Measures].[Gross School Land Value], [Measures].[Net General Building Value], [Measures].[Gross School Total Value], [Measures].[General Exemptions Total Value], [Measures].[Net Other Building Value], [Measures].[Avg Net General Value], [Measures].[Avg Net Other Value], [Measures].[Actual Land Value], [Measures].[Actual Building Value], [Measures].[Actual Total Value], [Measures].[Roll Folio Count], [Measures].[Net Other Total Value], [Measures].[Gross General Land Value], [Measures].[Gross General Building Value], [Measures].[General Exemptions Land Value], [Measures].[General Exemptions Building Value], [Measures].[Avg Actual Value] } ON COLUMNS, NON EMPTY { ([Manual Class].[Main Building Flag].[Main Building Flag].ALLMEMBERS * [Roll Year].[Roll Year].[Roll Year].ALLMEMBERS * [Manual Class].[Pred Manual Class Flag].[Pred Manual Class Flag].ALLMEMBERS * [Current Roll Cycle].[Current Cycle Flag].[Current Cycle Flag].ALLMEMBERS * [Property].[Current Record Indicator].[Current Record Indicator].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS * [Assessment Geography].[Region Code].[Region Code].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualUseActualUse, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED), [Assessment Geography].[Roll Year].currentmember ), IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyArea, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyArea, CONSTRAINED), [Assessment Geography].[Area].currentmember ), IIF( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED), [Assessment Geography].[Jurisdiction].currentmember ), IIF( STRTOSET(@ActualUseActualUse, CONSTRAINED).Count = 1, STRTOSET(@ActualUseActualUse, CONSTRAINED), [Actual Use].[Actual Use].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -133,6 +133,17 @@
                       <UniqueName>[Predominant Building].[Effective Year].[Effective Year]</UniqueName>
                     </ID>
                     <ItemCaption>Effective Year</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Assessment Geography</DimensionName>
+                      <HierarchyName>Region Code</HierarchyName>
+                      <HierarchyUniqueName>[Assessment Geography].[Region Code]</HierarchyUniqueName>
+                      <LevelName>Region Code</LevelName>
+                      <UniqueName>[Assessment Geography].[Region Code].[Region Code]</UniqueName>
+                    </ID>
+                    <ItemCaption>Region Code</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
@@ -718,7 +729,7 @@
                     <Condition xsi:type="EqualTo">
                       <Members>
                         <Member>
-                          <MemberUniqueName>[Assessment Geography].[Roll Category].[All]</MemberUniqueName>
+                          <MemberUniqueName>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</MemberUniqueName>
                         </Member>
                       </Members>
                       <Parametrized>true</Parametrized>
@@ -863,7 +874,7 @@
               <QueryProperties />
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Net General Building Value], [Measures].[Net General Total Value], [Measures].[Gross General Total Value], [Measures].[Net Other Land Value], [Measures].[Gross School Building Value], [Measures].[School Exemptions Land Value], [Measures].[School Exemptions Building Value], [Measures].[School Exemptions Total Value], [Measures].[Net School Land Value], [Measures].[Net School Building Value], [Measures].[Gross Other Land Value], [Measures].[Net School Total Value], [Measures].[Avg Net School Value], [Measures].[Gross Other Building Value], [Measures].[Gross Other Total Value], [Measures].[Other Exemptions Land Value], [Measures].[Other Exemptions Building Value], [Measures].[Other Exemptions Total Value], [Measures].[Gross School Land Value], [Measures].[Avg Net Other Value], [Measures].[Gross School Total Value], [Measures].[General Exemptions Total Value], [Measures].[Net Other Building Value], [Measures].[Avg Net General Value], [Measures].[Roll Folio Count], [Measures].[Net General Land Value], [Measures].[Actual Building Value], [Measures].[Actual Total Value], [Measures].[Actual Land Value], [Measures].[Net Other Total Value], [Measures].[Gross General Land Value], [Measures].[Gross General Building Value], [Measures].[General Exemptions Land Value], [Measures].[General Exemptions Building Value], [Measures].[Avg Actual Value] } ON COLUMNS, NON EMPTY { ([Manual Class].[Main Building Flag].[Main Building Flag].ALLMEMBERS * [Roll Year].[Roll Year].[Roll Year].ALLMEMBERS * [Manual Class].[Pred Manual Class Flag].[Pred Manual Class Flag].ALLMEMBERS * [Current Roll Cycle].[Current Cycle Flag].[Current Cycle Flag].ALLMEMBERS * [Property].[Current Record Indicator].[Current Record Indicator].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualUseActualUse, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED), [Assessment Geography].[Roll Year].currentmember ), IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyArea, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyArea, CONSTRAINED), [Assessment Geography].[Area].currentmember ), IIF( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED), [Assessment Geography].[Jurisdiction].currentmember ), IIF( STRTOSET(@ActualUseActualUse, CONSTRAINED).Count = 1, STRTOSET(@ActualUseActualUse, CONSTRAINED), [Actual Use].[Actual Use].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Net General Land Value], [Measures].[Net General Total Value], [Measures].[Gross General Total Value], [Measures].[Net Other Land Value], [Measures].[Gross School Building Value], [Measures].[School Exemptions Land Value], [Measures].[School Exemptions Building Value], [Measures].[School Exemptions Total Value], [Measures].[Net School Land Value], [Measures].[Net School Building Value], [Measures].[Gross Other Land Value], [Measures].[Net School Total Value], [Measures].[Avg Net School Value], [Measures].[Gross Other Building Value], [Measures].[Gross Other Total Value], [Measures].[Other Exemptions Land Value], [Measures].[Other Exemptions Building Value], [Measures].[Other Exemptions Total Value], [Measures].[Gross School Land Value], [Measures].[Net General Building Value], [Measures].[Gross School Total Value], [Measures].[General Exemptions Total Value], [Measures].[Net Other Building Value], [Measures].[Avg Net General Value], [Measures].[Avg Net Other Value], [Measures].[Actual Land Value], [Measures].[Actual Building Value], [Measures].[Actual Total Value], [Measures].[Roll Folio Count], [Measures].[Net Other Total Value], [Measures].[Gross General Land Value], [Measures].[Gross General Building Value], [Measures].[General Exemptions Land Value], [Measures].[General Exemptions Building Value], [Measures].[Avg Actual Value] } ON COLUMNS, NON EMPTY { ([Manual Class].[Main Building Flag].[Main Building Flag].ALLMEMBERS * [Roll Year].[Roll Year].[Roll Year].ALLMEMBERS * [Manual Class].[Pred Manual Class Flag].[Pred Manual Class Flag].ALLMEMBERS * [Current Roll Cycle].[Current Cycle Flag].[Current Cycle Flag].ALLMEMBERS * [Property].[Current Record Indicator].[Current Record Indicator].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS * [Assessment Geography].[Region Code].[Region Code].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualUseActualUse, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED), [Assessment Geography].[Roll Year].currentmember ), IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyArea, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyArea, CONSTRAINED), [Assessment Geography].[Area].currentmember ), IIF( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED), [Assessment Geography].[Jurisdiction].currentmember ), IIF( STRTOSET(@ActualUseActualUse, CONSTRAINED).Count = 1, STRTOSET(@ActualUseActualUse, CONSTRAINED), [Actual Use].[Actual Use].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollYear</Name>
@@ -883,7 +894,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -1408,6 +1419,10 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Predominant Building].[Effective Year].[Effective Year]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Region_Code">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Assessment Geography].[Region Code].[Region Code]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Actual_Land_Value">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Actual Land Value]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
@@ -1554,7 +1569,7 @@
           </FilterValues>
         </Filter>
         <Filter>
-          <FilterExpression>=Fields!Pred_Manual_Class_Flag.Value</FilterExpression>
+          <FilterExpression>=Fields!Main_Building_Flag.Value</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue>Y</FilterValue>
@@ -1640,7 +1655,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -1787,7 +1802,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -1963,7 +1978,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -2171,7 +2186,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -2414,7 +2429,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -2695,7 +2710,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -3017,7 +3032,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -3383,7 +3398,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -3796,7 +3811,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -4259,7 +4274,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -4775,7 +4790,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -5311,7 +5326,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Roll Category].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</DefaultValue>
                   </DefaultValues>
                   <Caption>Roll Category</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Roll Category]</HierarchyUniqueName>
@@ -8436,7 +8451,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.99305in</Top>
+                <Top>0.9863in</Top>
                 <Left>0.10363in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
@@ -8488,8 +8503,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.38667in</Top>
-                <Left>4.99494in</Left>
+                <Top>1.75379in</Top>
+                <Left>0.07863in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
                 <ZIndex>1</ZIndex>
@@ -8541,7 +8556,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>1.19451in</Top>
+                <Top>1.18776in</Top>
                 <Left>0.09382in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.36189in</Width>
@@ -8594,8 +8609,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.00821in</Top>
-                <Left>4.99494in</Left>
+                <Top>1.37533in</Top>
+                <Left>0.07863in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.3467in</Width>
                 <ZIndex>3</ZIndex>
@@ -8640,7 +8655,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.60063in</Top>
+                <Top>0.59388in</Top>
                 <Left>0.10363in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.35208in</Width>
@@ -8686,13 +8701,13 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.60202in</Top>
-                <Left>4.99494in</Left>
+                <Top>1.96914in</Top>
+                <Left>0.07863in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.3467in</Width>
                 <ZIndex>5</ZIndex>
                 <Visibility>
-                  <Hidden>=IIF(Parameters!ManualClassManualClass.Label(0) = "All", True, False)</Hidden>
+                  <Hidden>=IIF(Parameters!TotalAreaRangeTotalAreaRange.Label(0) = "All", True, False)</Hidden>
                 </Visibility>
                 <Style>
                   <Border>
@@ -8739,8 +8754,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.79298in</Top>
-                <Left>4.99494in</Left>
+                <Top>2.1601in</Top>
+                <Left>0.07863in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.3467in</Width>
                 <ZIndex>6</ZIndex>
@@ -8785,7 +8800,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.79298in</Top>
+                <Top>0.78623in</Top>
                 <Left>0.10632in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
@@ -8838,8 +8853,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.20967in</Top>
-                <Left>4.99494in</Left>
+                <Top>1.57679in</Top>
+                <Left>0.07863in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
                 <ZIndex>8</ZIndex>
@@ -8891,8 +8906,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>1.01805in</Top>
-                <Left>4.99225in</Left>
+                <Top>2.38517in</Top>
+                <Left>0.07594in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
                 <ZIndex>9</ZIndex>
@@ -8944,7 +8959,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.41306in</Top>
+                <Top>0.40631in</Top>
                 <Left>0.10363in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
@@ -8997,8 +9012,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>1.21812in</Top>
-                <Left>4.99494in</Left>
+                <Top>2.58524in</Top>
+                <Left>0.07863in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
                 <ZIndex>11</ZIndex>
@@ -9043,7 +9058,6 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.00675in</Top>
                 <Left>0.10632in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
@@ -9089,7 +9103,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox3</rd:DefaultName>
-                <Top>0.22488in</Top>
+                <Top>0.21813in</Top>
                 <Left>0.10632in</Left>
                 <Height>0.18757in</Height>
                 <Width>4.34939in</Width>
@@ -9109,9 +9123,9 @@
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>10.88826in</Top>
+            <Top>10.89501in</Top>
             <Left>0.1243in</Left>
-            <Height>1.51389in</Height>
+            <Height>2.91687in</Height>
             <Width>10.09122in</Width>
             <ZIndex>7</ZIndex>
             <Style>
@@ -9137,9 +9151,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>10.67418in</Top>
+            <Top>10.51673in</Top>
             <Left>0.21812in</Left>
-            <Height>0.20833in</Height>
+            <Height>0.30883in</Height>
             <Width>1.375in</Width>
             <ZIndex>8</ZIndex>
             <Style>
@@ -9153,7 +9167,7 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>13.17299in</Height>
+        <Height>13.95077in</Height>
         <Style />
       </Body>
       <Width>10.625in</Width>
@@ -9188,7 +9202,7 @@
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>[Assessment Geography].[Roll Category].[All]</Value>
+          <Value>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</Value>
         </Values>
       </DefaultValue>
       <Prompt>Roll Category</Prompt>

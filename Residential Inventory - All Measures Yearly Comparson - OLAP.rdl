@@ -3062,7 +3062,7 @@
           </FilterValues>
         </Filter>
         <Filter>
-          <FilterExpression>=Fields!Pred_Manual_Class_Flag.Value</FilterExpression>
+          <FilterExpression>=Fields!Main_Building_Flag.Value</FilterExpression>
           <Operator>Equal</Operator>
           <FilterValues>
             <FilterValue>Y</FilterValue>
