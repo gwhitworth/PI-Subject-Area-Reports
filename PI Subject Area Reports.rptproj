@@ -79,6 +79,10 @@
       <FullPath>AllOwnersByPropertyKey.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>AllValuesByPropertySubClass.rdl</Name>
+      <FullPath>AllValuesByPropertySubClass.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>BobsParameterExample.rdl</Name>
       <FullPath>BobsParameterExample.rdl</FullPath>
     </ProjectItem>
@@ -165,6 +169,10 @@
     <ProjectItem>
       <Name>MinorTaxingJursidictionsByPropertyKey.rdl</Name>
       <FullPath>MinorTaxingJursidictionsByPropertyKey.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Multi Select Parameter example.rdl</Name>
+      <FullPath>Multi Select Parameter example.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>old - Residential Inventory - All Measures OLAP v1.rdl</Name>
@@ -259,12 +267,24 @@
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>AllValuesByPropertySubClass.rdl</Name>
-      <FullPath>AllValuesByPropertySubClass.rdl</FullPath>
+      <Name>Roll Detail - Bob Edited.rdl</Name>
+      <FullPath>Roll Detail - Bob Edited.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Multi Select Parameter example.rdl</Name>
-      <FullPath>Multi Select Parameter example.rdl</FullPath>
+      <Name>Roll Detail - Greatly Simplied.rdl</Name>
+      <FullPath>Roll Detail - Greatly Simplied.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Copy (2) of Roll Detail.rdl</Name>
+      <FullPath>Copy (2) of Roll Detail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Copy (3) of Roll Detail.rdl</Name>
+      <FullPath>Copy (3) of Roll Detail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Roll Detail - BACKUP.rdl</Name>
+      <FullPath>Roll Detail - BACKUP.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
