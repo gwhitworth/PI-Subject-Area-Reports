@@ -3917,14 +3917,14 @@ ORDER BY [Roll Year] DESC</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.6875in</Height>
+        <Height>0.64583in</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>40.57096in</Width>
+      <Width>40.22721in</Width>
       <Page>
         <PageHeader>
           <Height>0.8425in</Height>
@@ -4094,7 +4094,7 @@ ORDER BY [Roll Year] DESC</CommandText>
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>1in</Height>
+          <Height>0.33681in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -4119,8 +4119,8 @@ ORDER BY [Roll Year] DESC</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox3</rd:DefaultName>
-              <Top>0.69375in</Top>
-              <Height>0.30625in</Height>
+              <Left>0.01888in</Left>
+              <Height>0.18125in</Height>
               <Width>2in</Width>
               <Style>
                 <Border>

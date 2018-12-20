@@ -95,8 +95,16 @@
       <FullPath>Copy (2) of Better - Residential Inventory - All Measures OLAP.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Copy (2) of Residential Inventory - All Measures - OLAP.rdl</Name>
+      <FullPath>Copy (2) of Residential Inventory - All Measures - OLAP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Copy (2) of Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Copy (2) of Residential Inventory - All Measures OLAP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Copy (2) of Roll Detail.rdl</Name>
+      <FullPath>Copy (2) of Roll Detail.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Copy (3) of Better - Residential Inventory - All Measures OLAP.rdl</Name>
@@ -105,6 +113,10 @@
     <ProjectItem>
       <Name>Copy (3) of Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Copy (3) of Residential Inventory - All Measures OLAP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Copy (3) of Roll Detail.rdl</Name>
+      <FullPath>Copy (3) of Roll Detail.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Copy (4) of Residential Inventory - All Measures OLAP.rdl</Name>
@@ -143,20 +155,12 @@
       <FullPath>Folio Count and Average Value.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Folio Detail v2.rdl</Name>
-      <FullPath>Folio Detail v2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Folio Detail v3.rdl</Name>
-      <FullPath>Folio Detail v3.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Folio Detail.rdl</Name>
       <FullPath>Folio Detail.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Folio Detail_Working.rdl</Name>
-      <FullPath>Folio Detail_Working.rdl</FullPath>
+      <Name>Folio Listing bak.rdl</Name>
+      <FullPath>Folio Listing bak.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Folio Listing.rdl</Name>
@@ -247,6 +251,18 @@
       <FullPath>Residential Inventory Extract.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Roll Detail - BACKUP.rdl</Name>
+      <FullPath>Roll Detail - BACKUP.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Roll Detail - Bob Edited.rdl</Name>
+      <FullPath>Roll Detail - Bob Edited.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Roll Detail - Greatly Simplied.rdl</Name>
+      <FullPath>Roll Detail - Greatly Simplied.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Roll Detail.rdl</Name>
       <FullPath>Roll Detail.rdl</FullPath>
     </ProjectItem>
@@ -265,26 +281,6 @@
     <ProjectItem>
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Detail - Bob Edited.rdl</Name>
-      <FullPath>Roll Detail - Bob Edited.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Detail - Greatly Simplied.rdl</Name>
-      <FullPath>Roll Detail - Greatly Simplied.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (2) of Roll Detail.rdl</Name>
-      <FullPath>Copy (2) of Roll Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (3) of Roll Detail.rdl</Name>
-      <FullPath>Copy (3) of Roll Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Detail - BACKUP.rdl</Name>
-      <FullPath>Roll Detail - BACKUP.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -324,6 +320,32 @@
         <TargetServerVersion>SSRS2016</TargetServerVersion>
         <TargetServerURL>http://localhost/reportserver</TargetServerURL>
         <TargetFolder>PI Subject Area Reports</TargetFolder>
+        <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Test</Name>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <TargetServerVersion>SSRS2016</TargetServerVersion>
+        <TargetServerURL>https://businessanalyticssystem-test.bcassessment.ca/ReportServer</TargetServerURL>
+        <TargetFolder>Enterprise/Assessment (Internal)/Property Inventory</TargetFolder>
+        <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Prod</Name>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <TargetServerVersion>SSRS2016</TargetServerVersion>
+        <TargetServerURL>https://businessanalyticssystem.bcassessment.ca/ReportServer</TargetServerURL>
+        <TargetFolder>Enterprise/Assessment (Internal)/Property Inventory</TargetFolder>
         <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
