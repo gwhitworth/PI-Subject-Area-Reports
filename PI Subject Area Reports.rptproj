@@ -266,6 +266,10 @@
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Gerry Work.rdl</Name>
+      <FullPath>Gerry Work.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
