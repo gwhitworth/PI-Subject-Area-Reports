@@ -167,6 +167,10 @@
       <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Roll Detail.rdl</Name>
+      <FullPath>Roll Detail.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Good - Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Good - Residential Inventory - All Measures OLAP.rdl</FullPath>
     </ProjectItem>
@@ -247,8 +251,8 @@
       <FullPath>Roll Detail - Greatly Simplied.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Roll Detail.rdl</Name>
-      <FullPath>Roll Detail.rdl</FullPath>
+      <Name>Roll Detail_Old.rdl</Name>
+      <FullPath>Roll Detail_Old.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Roll Totals.rdl</Name>
@@ -265,10 +269,6 @@
     <ProjectItem>
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Gerry Work.rdl</Name>
-      <FullPath>Gerry Work.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
