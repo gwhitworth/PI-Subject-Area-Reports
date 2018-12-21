@@ -6984,7 +6984,7 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>qryData</DataSetName>
-            <Top>0.0008in</Top>
+            <Top>0.45945in</Top>
             <Height>0.66792in</Height>
             <Width>13.75528in</Width>
             <Style>
@@ -6993,8 +6993,758 @@
               </Border>
             </Style>
           </Tablix>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Textbox Name="Textbox26">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Actual Use</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>: </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!ActualUseActualUse.label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>0.9863in</Top>
+                <Left>0.10363in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!ActualUseActualUse.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox27">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Effective Range:</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!YearEffectiveRangeYearEffectiveRange.Value, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>1.75379in</Top>
+                <Left>0.07863in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <ZIndex>1</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!YearEffectiveRangeYearEffectiveRange.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox28">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Manual Class:</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!ManualClassManualClass.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>1.18776in</Top>
+                <Left>0.09382in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.36189in</Width>
+                <ZIndex>2</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!ManualClassManualClass.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox30">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Actual Value Range:</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!ActualValueRangeActualValueRange.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>1.37533in</Top>
+                <Left>0.07863in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.3467in</Width>
+                <ZIndex>3</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!ActualValueRangeActualValueRange.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox31">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Area: </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!AssessmentGeographyArea.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>0.59388in</Top>
+                <Left>0.10363in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.35208in</Width>
+                <ZIndex>4</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!AssessmentGeographyArea.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox32">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Total Area Range: </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!TotalAreaRangeTotalAreaRange.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>1.96914in</Top>
+                <Left>0.07863in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.3467in</Width>
+                <ZIndex>5</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!TotalAreaRangeTotalAreaRange.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox34">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Storey Range:</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!StoreyRangeStoreyRange.Label(0), ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>2.1601in</Top>
+                <Left>0.07863in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.3467in</Width>
+                <ZIndex>6</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!StoreyRangeStoreyRange.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox36">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Jurisdiction: </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!AssessmentGeographyJurisdiction.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>0.78623in</Top>
+                <Left>0.10632in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <ZIndex>7</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!AssessmentGeographyJurisdiction.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox38">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Built Range:</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!YearBuiltRangeYearBuiltRange.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>1.57679in</Top>
+                <Left>0.07863in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <ZIndex>8</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!YearBuiltRangeYearBuiltRange.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox40">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Bathroom Range:</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!BathroomsRangeBathroomsRange.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>2.38517in</Top>
+                <Left>0.07594in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <ZIndex>9</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!BathroomsRangeBathroomsRange.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox42">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Region:</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value xml:space="preserve"> </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!AssessmentGeographyRegion.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>0.40631in</Top>
+                <Left>0.10363in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <ZIndex>10</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!AssessmentGeographyRegion.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox44">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Bedroom Range:</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>: </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!BedroomRangeBedroomsRange.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>2.58524in</Top>
+                <Left>0.07863in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <ZIndex>11</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!BedroomRangeBedroomsRange.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox46">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Roll Category: </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!AssessmentGeographyRollCategory.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Left>0.10632in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <ZIndex>12</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!AssessmentGeographyRollCategory.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox48">
+                <CanGrow>true</CanGrow>
+                <CanShrink>true</CanShrink>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Roll Year: </Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                          <FontWeight>Bold</FontWeight>
+                          <TextDecoration>Underline</TextDecoration>
+                        </Style>
+                      </TextRun>
+                      <TextRun>
+                        <Value>=Join(Parameters!AssessmentGeographyRollYear.Label, ",")</Value>
+                        <Style>
+                          <FontStyle>Italic</FontStyle>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox3</rd:DefaultName>
+                <Top>0.21813in</Top>
+                <Left>0.10632in</Left>
+                <Height>0.18757in</Height>
+                <Width>4.34939in</Width>
+                <ZIndex>13</ZIndex>
+                <Visibility>
+                  <Hidden>=IIF(Parameters!AssessmentGeographyRollYear.Label(0) = "All", True, False)</Hidden>
+                </Visibility>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>1.62828in</Top>
+            <Height>2.91687in</Height>
+            <Width>10.09122in</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+          <Textbox Name="Textbox49">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Filters in effect:</Value>
+                    <Style>
+                      <FontStyle>Italic</FontStyle>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>1.25in</Top>
+            <Height>0.30883in</Height>
+            <Width>1.375in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>0.72161in</Height>
+        <Height>4.54515in</Height>
         <Style />
       </Body>
       <Width>13.77655in</Width>

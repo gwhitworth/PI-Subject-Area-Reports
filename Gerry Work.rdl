@@ -7891,11 +7891,6 @@
   <ReportParameters>
     <ReportParameter Name="AssessmentGeographyRollYear">
       <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>[Assessment Geography].[Roll Year].[All]</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>Roll Year</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -7925,11 +7920,6 @@
     </ReportParameter>
     <ReportParameter Name="AssessmentGeographyRegion">
       <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>[Assessment Geography].[Region].[All]</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>Region</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -7942,11 +7932,6 @@
     </ReportParameter>
     <ReportParameter Name="AssessmentGeographyArea">
       <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>[Assessment Geography].[Area].[All]</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>Area</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -7959,11 +7944,6 @@
     </ReportParameter>
     <ReportParameter Name="AssessmentGeographyJurisdiction">
       <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>[Assessment Geography].[Jurisdiction].[All]</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>Jurisdiction</Prompt>
       <ValidValues>
         <DataSetReference>
