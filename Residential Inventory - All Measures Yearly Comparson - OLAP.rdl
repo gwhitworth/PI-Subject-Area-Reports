@@ -7528,69 +7528,16 @@
       </Fields>
     </DataSet>
     <DataSet Name="qryRollYear">
-      <Query>
-        <DataSourceName>OLAP</DataSourceName>
-        <CommandText>with member RollYearMembers as
-[Roll Year].[Roll Year].currentmember.unique_name
-select RollYearMembers on 0
-                                ,[Roll Year].[Roll Year].children on 1
-from [Property Inventory Roll Summary]
-where [Roll Year].[Current Year Flag].&amp;[Yes]</CommandText>
-        <rd:DesignerState>
-          <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
-            <CommandType>MDX</CommandType>
-            <Type>Query</Type>
-            <QuerySpecification xsi:type="MDXQuerySpecification">
-              <Select>
-                <Items>
-                  <Item>
-                    <ID xsi:type="Level">
-                      <DimensionName>Roll Year</DimensionName>
-                      <HierarchyName>Roll Year</HierarchyName>
-                      <HierarchyUniqueName>[Roll Year].[Roll Year]</HierarchyUniqueName>
-                      <LevelName>Roll Year</LevelName>
-                      <UniqueName>[Roll Year].[Roll Year].[Roll Year]</UniqueName>
-                    </ID>
-                    <ItemCaption>Roll Year</ItemCaption>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Measure">
-                      <MeasureName>RollYearMembers</MeasureName>
-                      <UniqueName>[Measures].[RollYearMembers]</UniqueName>
-                    </ID>
-                    <ItemCaption>RollYearMembers</ItemCaption>
-                    <FormattedValue>true</FormattedValue>
-                  </Item>
-                </Items>
-              </Select>
-              <AutoExecute>false</AutoExecute>
-              <From>Property Inventory Roll Summary</From>
-              <Filter>
-                <FilterItems />
-              </Filter>
-              <Calculations />
-              <Aggregates />
-              <QueryProperties />
-            </QuerySpecification>
-            <Query>
-              <Statement>with member RollYearMembers as
-[Roll Year].[Roll Year].currentmember.unique_name
-select RollYearMembers on 0
-                                ,[Roll Year].[Roll Year].children on 1
-from [Property Inventory Roll Summary]
-where [Roll Year].[Current Year Flag].&amp;[Yes]</Statement>
-              <ParameterDefinitions />
-            </Query>
-          </QueryDefinition>
-        </rd:DesignerState>
-      </Query>
+      <SharedDataSet>
+        <SharedDataSetReference>qryRollYear</SharedDataSetReference>
+      </SharedDataSet>
       <Fields>
         <Field Name="Roll_Year">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Roll Year].[Roll Year].[Roll Year]" /&gt;</DataField>
+          <DataField>Roll_Year</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="RollYearMembers">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[RollYearMembers]" /&gt;</DataField>
+          <DataField>RollYearMembers</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -13884,10 +13831,9 @@ where [Roll Year].[Current Year Flag].&amp;[Yes]</Statement>
     <ReportParameter Name="RollYearRollYear">
       <DataType>String</DataType>
       <DefaultValue>
-        <DataSetReference>
-          <DataSetName>qryRollYear</DataSetName>
-          <ValueField>RollYearMembers</ValueField>
-        </DataSetReference>
+        <Values>
+          <Value>[Roll Year].[Roll Year].&amp;[2017]</Value>
+        </Values>
       </DefaultValue>
       <Prompt>Roll Year</Prompt>
       <ValidValues>
@@ -13903,7 +13849,7 @@ where [Roll Year].[Current Year Flag].&amp;[Yes]</Statement>
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>[Assessment Geography].[Roll Category].[All]</Value>
+          <Value>[Assessment Geography].[Roll Category].&amp;[1 - Provincial Roll]</Value>
         </Values>
       </DefaultValue>
       <Prompt>Roll Category</Prompt>

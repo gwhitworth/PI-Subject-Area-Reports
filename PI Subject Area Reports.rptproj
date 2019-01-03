@@ -68,6 +68,10 @@
       <Name>qryRY.rsd</Name>
       <FullPath>qryRY.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>qryRollYear.rsd</Name>
+      <FullPath>qryRollYear.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
@@ -167,10 +171,6 @@
       <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Roll Detail.rdl</Name>
-      <FullPath>Roll Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Good - Residential Inventory - All Measures OLAP.rdl</Name>
       <FullPath>Good - Residential Inventory - All Measures OLAP.rdl</FullPath>
     </ProjectItem>
@@ -249,6 +249,10 @@
     <ProjectItem>
       <Name>Roll Detail - Greatly Simplied.rdl</Name>
       <FullPath>Roll Detail - Greatly Simplied.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Roll Detail.rdl</Name>
+      <FullPath>Roll Detail.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Roll Detail_Old.rdl</Name>
