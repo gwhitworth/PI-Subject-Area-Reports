@@ -581,6 +581,7 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -1319,7 +1320,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Folio Listing</Value>
+                      <Value>Residential Inventory Extract</Value>
                       <Style />
                     </TextRun>
                   </TextRuns>
