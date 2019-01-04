@@ -10,6 +10,7 @@ Global
 		Debug|Default = Debug|Default
 		DebugLocal|Default = DebugLocal|Default
 		Release|Default = Release|Default
+		Test|Default = Test|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Debug|Default.ActiveCfg = Debug
@@ -20,6 +21,9 @@ Global
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Release|Default.ActiveCfg = Release
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Release|Default.Build.0 = Release
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Release|Default.Deploy.0 = Release
+		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Test|Default.ActiveCfg = Test
+		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Test|Default.Build.0 = Test
+		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Test|Default.Deploy.0 = Test
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

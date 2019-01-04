@@ -5854,7 +5854,7 @@
                   <Width>0.89536in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.53in</Width>
+                  <Width>0.5911in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.54167in</Width>
@@ -7692,7 +7692,7 @@
             <DataSetName>qryData</DataSetName>
             <Top>0.08445in</Top>
             <Height>0.66792in</Height>
-            <Width>13.75528in</Width>
+            <Width>13.81638in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -8499,7 +8499,7 @@
         <Height>4.29515in</Height>
         <Style />
       </Body>
-      <Width>13.77655in</Width>
+      <Width>13.81638in</Width>
       <Page>
         <PageHeader>
           <Height>0.86458in</Height>
