@@ -406,21 +406,33 @@
                   <FilterItem>
                     <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                     <Condition xsi:type="EqualTo">
-                      <Members />
+                      <Members>
+                        <Member>
+                          <MemberUniqueName>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</MemberUniqueName>
+                        </Member>
+                      </Members>
                       <Parametrized>true</Parametrized>
                     </Condition>
                   </FilterItem>
                   <FilterItem>
                     <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                     <Condition xsi:type="EqualTo">
-                      <Members />
+                      <Members>
+                        <Member>
+                          <MemberUniqueName>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</MemberUniqueName>
+                        </Member>
+                      </Members>
                       <Parametrized>true</Parametrized>
                     </Condition>
                   </FilterItem>
                   <FilterItem>
                     <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                     <Condition xsi:type="EqualTo">
-                      <Members />
+                      <Members>
+                        <Member>
+                          <MemberUniqueName>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</MemberUniqueName>
+                        </Member>
+                      </Members>
                       <Parametrized>true</Parametrized>
                     </Condition>
                   </FilterItem>
@@ -429,7 +441,7 @@
                     <Condition xsi:type="EqualTo">
                       <Members>
                         <Member>
-                          <MemberUniqueName>[Assessment Geography].[Neighbourhood].[All]</MemberUniqueName>
+                          <MemberUniqueName>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</MemberUniqueName>
                         </Member>
                       </Members>
                       <Parametrized>true</Parametrized>
@@ -580,7 +592,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -601,7 +615,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -625,7 +641,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -653,7 +671,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -1318,7 +1336,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1463,7 +1483,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1484,7 +1506,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1638,7 +1662,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1659,7 +1685,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1683,7 +1711,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1711,7 +1741,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -1875,7 +1905,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1896,7 +1928,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1920,7 +1954,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -1948,7 +1984,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -2150,7 +2186,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2171,7 +2209,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2195,7 +2235,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2223,7 +2265,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -2466,7 +2508,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2487,7 +2531,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2511,7 +2557,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2539,7 +2587,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -2826,7 +2874,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2847,7 +2897,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2871,7 +2923,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -2899,7 +2953,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -3233,7 +3287,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -3254,7 +3310,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -3278,7 +3336,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -3306,7 +3366,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -3690,7 +3750,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -3711,7 +3773,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -3735,7 +3799,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -3763,7 +3829,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -4200,7 +4266,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -4221,7 +4289,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -4245,7 +4315,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -4273,7 +4345,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -4766,7 +4838,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -4787,7 +4861,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -4811,7 +4887,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -4839,7 +4917,7 @@
                 <ParameterDefinition>
                   <Name>AssessmentGeographyNeighbourhood</Name>
                   <DefaultValues>
-                    <DefaultValue>[Assessment Geography].[Neighbourhood].[All]</DefaultValue>
+                    <DefaultValue>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</DefaultValue>
                   </DefaultValues>
                   <Caption>Neighbourhood</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Neighbourhood]</HierarchyUniqueName>
@@ -5648,7 +5726,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRegion</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Region</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Region]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -5669,7 +5749,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyArea</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Area</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Area]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -5693,7 +5775,9 @@
                 </ParameterDefinition>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyJurisdiction</Name>
-                  <DefaultValues />
+                  <DefaultValues>
+                    <DefaultValue>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</DefaultValue>
+                  </DefaultValues>
                   <Caption>Jurisdiction</Caption>
                   <HierarchyUniqueName>[Assessment Geography].[Jurisdiction]</HierarchyUniqueName>
                   <ParameterValuesQuery>
@@ -8526,9 +8610,75 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox9</rd:DefaultName>
-              <Left>0.02655in</Left>
+              <Left>2.41322in</Left>
               <Height>0.37153in</Height>
-              <Width>13.5in</Width>
+              <Width>9.60316in</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Line Name="Line1">
+              <Top>0.79042in</Top>
+              <Left>0.01958in</Left>
+              <Height>0in</Height>
+              <Width>13.75697in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Image Name="RiskRating11">
+              <Source>Embedded</Source>
+              <Value>RiskRating11</Value>
+              <Sizing>FitProportional</Sizing>
+              <ActionInfo>
+                <Actions>
+                  <Action>
+                    <Hyperlink>https://insite.bcassessment.ca/04/0404/Documents/Risk%20Rating%20Guide.pdf</Hyperlink>
+                  </Action>
+                </Actions>
+              </ActionInfo>
+              <Top>0.25in</Top>
+              <Left>13.27135in</Left>
+              <Height>0.5in</Height>
+              <Width>0.5in</Width>
+              <ZIndex>2</ZIndex>
+              <ToolTip>="The risk rating"</ToolTip>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="Textbox10">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Date:</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox10</rd:DefaultName>
+              <Left>12.40155in</Left>
+              <Height>0.25in</Height>
+              <Width>0.44444in</Width>
+              <ZIndex>3</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -8559,78 +8709,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox4</rd:DefaultName>
-              <Top>0.28125in</Top>
+              <Top>0.40625in</Top>
               <Height>0.1875in</Height>
               <Width>2.35069in</Width>
-              <ZIndex>1</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Image Name="RiskRating11">
-              <Source>Embedded</Source>
-              <Value>RiskRating11</Value>
-              <Sizing>FitProportional</Sizing>
-              <ActionInfo>
-                <Actions>
-                  <Action>
-                    <Hyperlink>https://insite.bcassessment.ca/04/0404/Documents/Risk%20Rating%20Guide.pdf</Hyperlink>
-                  </Action>
-                </Actions>
-              </ActionInfo>
-              <Top>0.25in</Top>
-              <Left>13.27135in</Left>
-              <Height>0.5in</Height>
-              <Width>0.5in</Width>
-              <ZIndex>2</ZIndex>
-              <ToolTip>="The risk rating"</ToolTip>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
-            <Image Name="BCALogo">
-              <Source>Embedded</Source>
-              <Value>BCA_BigBlueLogo</Value>
-              <Left>0.04864in</Left>
-              <Height>0.37153in</Height>
-              <Width>2.35069in</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingTop>5pt</PaddingTop>
-              </Style>
-            </Image>
-            <Textbox Name="Textbox10">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Date:</Value>
-                      <Style />
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox10</rd:DefaultName>
-              <Left>12.27655in</Left>
-              <Height>0.25in</Height>
-              <Width>0.44444in</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <Border>
@@ -8653,13 +8734,15 @@
                       <Style />
                     </TextRun>
                   </TextRuns>
-                  <Style />
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox11</rd:DefaultName>
-              <Left>12.77655in</Left>
+              <Left>12.90155in</Left>
               <Height>0.25in</Height>
-              <Width>1in</Width>
+              <Width>0.875in</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <Border>
@@ -8671,18 +8754,20 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Line Name="Line1">
-              <Top>0.79042in</Top>
-              <Left>0.01958in</Left>
-              <Height>0in</Height>
-              <Width>13.75697in</Width>
+            <Image Name="BCALogo">
+              <Source>Embedded</Source>
+              <Value>BCA_BigBlueLogo</Value>
+              <Height>0.37153in</Height>
+              <Width>2.35069in</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <Border>
-                  <Style>Solid</Style>
+                  <Style>None</Style>
                 </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingTop>5pt</PaddingTop>
               </Style>
-            </Line>
+            </Image>
           </ReportItems>
           <Style>
             <Border>
@@ -8820,6 +8905,11 @@
     </ReportParameter>
     <ReportParameter Name="AssessmentGeographyRegion">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Assessment Geography].[Region].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Region</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -8832,6 +8922,11 @@
     </ReportParameter>
     <ReportParameter Name="AssessmentGeographyArea">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Assessment Geography].[Area].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Area</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -8844,6 +8939,11 @@
     </ReportParameter>
     <ReportParameter Name="AssessmentGeographyJurisdiction">
       <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</Value>
+        </Values>
+      </DefaultValue>
       <Prompt>Jurisdiction</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -8858,7 +8958,7 @@
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>[Assessment Geography].[Neighbourhood].[All]</Value>
+          <Value>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</Value>
         </Values>
       </DefaultValue>
       <Prompt>Neighbourhood</Prompt>
