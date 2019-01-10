@@ -65,12 +65,20 @@
       <FullPath>qryEDITJUR.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>qryRollYear.rsd</Name>
+      <FullPath>qryRollYear.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>qryRY.rsd</Name>
       <FullPath>qryRY.rsd</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>qryRollYear.rsd</Name>
-      <FullPath>qryRollYear.rsd</FullPath>
+      <Name>qryMTC.rsd</Name>
+      <FullPath>qryMTC.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>qryRCN.rsd</Name>
+      <FullPath>qryRCN.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -273,6 +281,14 @@
     <ProjectItem>
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RollTotalMinorTaxJR.rdl</Name>
+      <FullPath>RollTotalMinorTaxJR.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RollTotalMinorTaxRD.rdl</Name>
+      <FullPath>RollTotalMinorTaxRD.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

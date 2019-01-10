@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Description />
+  <DataSet Name="qryMTC">
+    <Query>
+      <DataSourceReference>EDW</DataSourceReference>
+      <CommandText>SELECT[dimMinorTaxCategory_SK]
+      ,[dimMinorTaxCategory_BK]
+      ,[Project Number Prefix]
+      ,[Minor Tax Category Code]
+      ,[Minor Tax Category Desc]
+      ,[Minor Tax Category]
+      ,[RowSortOrder]
+  FROM [EDW].[edw].[dimMinorTaxCategory]
+  WHERE [dimMinorTaxCategory_SK] &gt; 0
+  ORDER BY [Minor Tax Category Code]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="dimMinorTaxCategory_SK">
+        <DataField>dimMinorTaxCategory_SK</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="dimMinorTaxCategory_BK">
+        <DataField>dimMinorTaxCategory_BK</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Project_Number_Prefix">
+        <DataField>Project Number Prefix</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Minor_Tax_Category_Code">
+        <DataField>Minor Tax Category Code</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Minor_Tax_Category_Desc">
+        <DataField>Minor Tax Category Desc</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Minor_Tax_Category">
+        <DataField>Minor Tax Category</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="RowSortOrder">
+        <DataField>RowSortOrder</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
