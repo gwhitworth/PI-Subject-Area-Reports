@@ -8793,7 +8793,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!General_Exemptions_Land_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!General_Exemptions_Land_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!General_Exemptions_Land_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -8898,7 +8900,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!General_Exemptions_Building_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!General_Exemptions_Building_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!General_Exemptions_Building_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -9003,7 +9007,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!General_Exemptions_Total_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!General_Exemptions_Total_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!General_Exemptions_Total_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -9843,7 +9849,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!School_Exemptions_Land_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!School_Exemptions_Land_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!School_Exemptions_Land_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -9948,7 +9956,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!School_Exemptions_Building_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!School_Exemptions_Building_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!School_Exemptions_Building_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -10053,7 +10063,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!School_Exemptions_Total_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!School_Exemptions_Total_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!School_Exemptions_Total_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -10893,7 +10905,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!Other_Exemptions_Land_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!Other_Exemptions_Land_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!Other_Exemptions_Land_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -10998,7 +11012,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!Other_Exemptions_Building_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!Other_Exemptions_Building_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!Other_Exemptions_Building_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -11103,7 +11119,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Avg(Fields!Other_Exemptions_Total_Value___Change_YOY.Value)</Value>
+                                  <Value>=IIF(Fields!Other_Exemptions_Total_Value___Change_YOY.Value &gt; 0
+, Avg(Fields!Other_Exemptions_Total_Value___Change_YOY.Value)
+, 0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>P</Format>
@@ -12010,9 +12028,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!General_Exemptions_Land_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
@@ -12049,9 +12064,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!General_Exemptions_Building_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
@@ -12088,9 +12100,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!General_Exemptions_Total_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
@@ -12384,9 +12393,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!School_Exemptions_Land_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
@@ -12423,9 +12429,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!School_Exemptions_Building_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
@@ -12462,9 +12465,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!School_Exemptions_Total_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
@@ -12746,9 +12746,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!Other_Exemptions_Land_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
@@ -12785,9 +12782,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!Other_Exemptions_Building_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
@@ -12824,9 +12818,6 @@
                       </Textbox>
                     </CellContents>
                   </TablixHeader>
-                  <Visibility>
-                    <Hidden>=IIf(Sum(Fields!Other_Exemptions_Total_Value.Value) = 0, True,False)</Hidden>
-                  </Visibility>
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
