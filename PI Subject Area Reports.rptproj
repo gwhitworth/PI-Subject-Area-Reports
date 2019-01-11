@@ -290,6 +290,10 @@
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Roll Detail GW.rdl</Name>
+      <FullPath>Roll Detail GW.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
