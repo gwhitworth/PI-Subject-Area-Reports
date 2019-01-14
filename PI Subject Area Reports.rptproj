@@ -103,58 +103,6 @@
       <FullPath>Building Information Extract.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Copy (2) of Better - Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>Copy (2) of Better - Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (2) of Residential Inventory - All Measures - OLAP.rdl</Name>
-      <FullPath>Copy (2) of Residential Inventory - All Measures - OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (2) of Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>Copy (2) of Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (2) of Roll Detail.rdl</Name>
-      <FullPath>Copy (2) of Roll Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (3) of Better - Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>Copy (3) of Better - Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (3) of Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>Copy (3) of Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (3) of Roll Detail.rdl</Name>
-      <FullPath>Copy (3) of Roll Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (4) of Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>Copy (4) of Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy (5) of Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>Copy (5) of Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy of ActualValuesByExemptTaxCodeAndPropertyClass.rdl</Name>
-      <FullPath>Copy of ActualValuesByExemptTaxCodeAndPropertyClass.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy of Better - Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>Copy of Better - Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy of Residential Inventory - All Measures - OLAP.rdl</Name>
-      <FullPath>Copy of Residential Inventory - All Measures - OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Copy of Residential Inventory - All Measures AJN.rdl</Name>
-      <FullPath>Copy of Residential Inventory - All Measures AJN.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Detail Report (cascading prompts) Template.rdl</Name>
       <FullPath>Detail Report (cascading prompts) Template.rdl</FullPath>
     </ProjectItem>
@@ -191,48 +139,12 @@
       <FullPath>Multi Select Parameter example.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>old - Residential Inventory - All Measures OLAP v1.rdl</Name>
-      <FullPath>old - Residential Inventory - All Measures OLAP v1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>old - Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>old - Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>old - Residential Inventory - All Measures.rdl</Name>
-      <FullPath>old - Residential Inventory - All Measures.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Owners.rdl</Name>
       <FullPath>Owners.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Residential Inventory - All Measures - OLAP - backup3.rdl</Name>
-      <FullPath>Residential Inventory - All Measures - OLAP - backup3.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Residential Inventory - All Measures - OLAP - backup4.rdl</Name>
-      <FullPath>Residential Inventory - All Measures - OLAP - backup4.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Residential Inventory - All Measures - OLAP - backup5.rdl</Name>
-      <FullPath>Residential Inventory - All Measures - OLAP - backup5.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Residential Inventory - All Measures - OLAP.rdl</Name>
       <FullPath>Residential Inventory - All Measures - OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Residential Inventory - All Measures AJN - backup1.rdl</Name>
-      <FullPath>Residential Inventory - All Measures AJN - backup1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Residential Inventory - All Measures AJN - backup2.rdl</Name>
-      <FullPath>Residential Inventory - All Measures AJN - backup2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Residential Inventory - All Measures AJN - old.rdl</Name>
-      <FullPath>Residential Inventory - All Measures AJN - old.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Residential Inventory - All Measures OLAP - Region.rdl</Name>
@@ -247,28 +159,8 @@
       <FullPath>Residential Inventory Extract.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Roll Detail - BACKUP.rdl</Name>
-      <FullPath>Roll Detail - BACKUP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Detail - Bob Edited.rdl</Name>
-      <FullPath>Roll Detail - Bob Edited.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Detail - Greatly Simplied.rdl</Name>
-      <FullPath>Roll Detail - Greatly Simplied.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Roll Detail.rdl</Name>
       <FullPath>Roll Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Detail Old.rdl</Name>
-      <FullPath>Roll Detail Old.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Detail_Old.rdl</Name>
-      <FullPath>Roll Detail_Old.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Roll Totals.rdl</Name>
