@@ -127,10 +127,6 @@
       <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Good - Residential Inventory - All Measures OLAP.rdl</Name>
-      <FullPath>Good - Residential Inventory - All Measures OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>MinorTaxingJursidictionsByPropertyKey.rdl</Name>
       <FullPath>MinorTaxingJursidictionsByPropertyKey.rdl</FullPath>
     </ProjectItem>
