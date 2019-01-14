@@ -263,6 +263,10 @@
       <FullPath>Roll Detail.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Roll Detail Old.rdl</Name>
+      <FullPath>Roll Detail Old.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Roll Detail_Old.rdl</Name>
       <FullPath>Roll Detail_Old.rdl</FullPath>
     </ProjectItem>
@@ -289,10 +293,6 @@
     <ProjectItem>
       <Name>Summary Report Template.rdl</Name>
       <FullPath>Summary Report Template.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Detail GW.rdl</Name>
-      <FullPath>Roll Detail GW.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
