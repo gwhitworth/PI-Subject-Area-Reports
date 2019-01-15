@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <Description>Minor taxing by Assessment Area</Description>
   <df:DefaultFontFamily>Tahoma</df:DefaultFontFamily>
+  <Author>Gerry Whitworth</Author>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="EDW">
@@ -410,26 +412,43 @@ WHERE [Roll Year] = @p_RY
       </Fields>
     </DataSet>
     <DataSet Name="qryRCN">
-      <SharedDataSet>
-        <SharedDataSetReference>qryRCN</SharedDataSetReference>
+      <Query>
+        <DataSourceName>EDW</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@p_RY">
             <Value>=Parameters!p_RY.Value</Value>
           </QueryParameter>
         </QueryParameters>
-      </SharedDataSet>
+        <CommandText>SELECT 
+	[Cycle Number]   
+	,CASE 
+		WHEN [Cycle Number] = -1 THEN
+			'Completed Roll run on ' + FORMAT( [Roll Entry Run Date], 'dd-MMM-yyyy', 'en-CA' )
+		WHEN [Cycle Number] = 0 THEN
+			'Revised Roll run on ' + FORMAT( [Roll Entry Run Date], 'dd-MMM-yyyy', 'en-CA' )
+		ELSE
+			'Cycle ' + [Cycle Number] + ' run on ' + FORMAT( [Roll Entry Run Date], 'dd-MMM-yyyy', 'en-CA' )
+	 END AS [Cycle Display]
+	 ,[Roll Entry Run Date]
+FROM  [edw].[dimRollCycle]
+
+WHERE [Roll Year] = @p_RY
+
+	  OR ([Cycle Number] IN (0,-1) AND [Roll Year] = @p_RY)
+ORDER BY [Roll Entry Run Date] DESC</CommandText>
+      </Query>
       <Fields>
         <Field Name="Cycle_Number">
-          <DataField>Cycle_Number</DataField>
+          <DataField>Cycle Number</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Cycle_Display">
-          <DataField>Cycle_Display</DataField>
+          <DataField>Cycle Display</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Roll_Entry_Run_Date">
-          <DataField>Roll_Entry_Run_Date</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Roll Entry Run Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>

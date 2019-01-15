@@ -119,10 +119,6 @@
       <FullPath>Folio Detail.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Folio Listing bak.rdl</Name>
-      <FullPath>Folio Listing bak.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Folio Listing.rdl</Name>
       <FullPath>Folio Listing.rdl</FullPath>
     </ProjectItem>
@@ -141,10 +137,6 @@
     <ProjectItem>
       <Name>Residential Inventory - All Measures - OLAP.rdl</Name>
       <FullPath>Residential Inventory - All Measures - OLAP.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Residential Inventory - All Measures OLAP - Region.rdl</Name>
-      <FullPath>Residential Inventory - All Measures OLAP - Region.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</Name>
