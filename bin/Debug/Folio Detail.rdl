@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Report MustUnderstand="df" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily">
+  <Description>Detail report containing Property Inventory detail for a single folio (Hidden, executed from the Report - Folio Listing)</Description>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+  <Author>Gerry Whitworth</Author>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="OLAP">
@@ -36,8 +38,7 @@
        [Measures].[NUMBER Half Bathrooms],
 	   [Measures].[Outbuilding Count] } 
 ON COLUMNS, 
-       NON EMPTY {[Roll Year].[Roll Year].&amp;["&amp; Parameters!p_RollYear.Value &amp;"] *
-	   [Property].[Roll Year].[Roll Year].allmembers *
+       NON EMPTY {[Property].[Roll Year].&amp;["&amp; Parameters!p_RollYear.Value &amp;"] *
 	   [Property].[Property Key].[Property Key].allmembers *
 	   [Parcel].[Tenure].[Tenure].allmembers *
 	   [Manual Class].[Manual Class].[Manual Class].allmembers *

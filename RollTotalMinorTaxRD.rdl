@@ -3875,6 +3875,7 @@ ORDER BY [Roll Entry Run Date] DESC</CommandText>
           <LabelField>Regional_District</LabelField>
         </DataSetReference>
       </ValidValues>
+      <MultiValue>true</MultiValue>
     </ReportParameter>
     <ReportParameter Name="p_MT">
       <DataType>String</DataType>
