@@ -132,7 +132,7 @@ WHERE [FA].[Roll Year] = @p_RY
      AND [TC].[Minor Tax Code] IN
 (
     SELECT [Minor Tax Code]
-    FROM [EDW].[dbo].[dimMinorTaxCodeTbl]
+    FROM [edw].[dimMinorTaxCode]
     WHERE [Roll Year] = @p_RY
           AND [Minor Tax Desc] IN(@p_MT)
 )
