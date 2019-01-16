@@ -103,10 +103,6 @@
       <FullPath>Building Information Extract.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Roll Detail.rdl</Name>
-      <FullPath>Roll Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Detail Report (cascading prompts) Template.rdl</Name>
       <FullPath>Detail Report (cascading prompts) Template.rdl</FullPath>
     </ProjectItem>
@@ -151,8 +147,8 @@
       <FullPath>Residential Inventory Extract.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Roll Detail Junk.rdl</Name>
-      <FullPath>Roll Detail Junk.rdl</FullPath>
+      <Name>Roll Detail.rdl</Name>
+      <FullPath>Roll Detail.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Roll Totals.rdl</Name>
