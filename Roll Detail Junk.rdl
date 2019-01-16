@@ -65,7 +65,7 @@
             <Value>=Parameters!BedroomRangeBedroomsRange.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText> SELECT NON EMPTY { [Measures].[Net School Total Value], [Measures].[Net School Building Value], [Measures].[Net Other Total Value], [Measures].[Net Other Land Value], [Measures].[Net Other Building Value], [Measures].[Net General Total Value], [Measures].[Net General Land Value], [Measures].[Net General Building Value], [Measures].[Actual Total Value], [Measures].[Actual Land Value], [Measures].[Actual Building Value], [Measures].[Net School Land Value] } ON COLUMNS, NON EMPTY { ([Property].[Roll Number].[Roll Number].ALLMEMBERS * [Assessment Geography].[Roll Year].[Roll Year].ALLMEMBERS * [Assessment Geography].[Area Code].[Area Code].ALLMEMBERS * [Assessment Geography].[Jurisdiction Code].[Jurisdiction Code].ALLMEMBERS * [Assessment Geography].[Neighbourhood Code].[Neighbourhood Code].ALLMEMBERS * [School District].[School District Code].[School District Code].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS * [Regional District].[Regional District Code].[Regional District Code].ALLMEMBERS * [Regional Hospital District].[Region Hospital District Code].[Region Hospital District Code].ALLMEMBERS * [Electoral District].[Electoral District Code].[Electoral District Code].ALLMEMBERS * [Property].[SITUS Address Street Name].[SITUS Address Street Name].ALLMEMBERS * [Property].[SITUS Building Unit Number].[SITUS Building Unit Number].ALLMEMBERS * [Property].[SITUS Postal Code].[SITUS Postal Code].ALLMEMBERS * [Property].[SITUS Street Direction].[SITUS Street Direction].ALLMEMBERS * [Property].[SITUS Street Number].[SITUS Street Number].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Current Roll Cycle].[Current Cycle Flag].&amp;[Yes] } ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualUseActualUse, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])))))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyArea, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyArea, CONSTRAINED), [Assessment Geography].[Area].currentmember ), IIF( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED), [Assessment Geography].[Jurisdiction].currentmember ), IIF( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED), [Assessment Geography].[Neighbourhood].currentmember ), IIF( STRTOSET(@ActualUseActualUse, CONSTRAINED).Count = 1, STRTOSET(@ActualUseActualUse, CONSTRAINED), [Actual Use].[Actual Use].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ), [Current Roll Cycle].[Current Cycle Flag].&amp;[Yes] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText> SELECT NON EMPTY { [Measures].[Net School Total Value], [Measures].[Net School Building Value], [Measures].[Net Other Total Value], [Measures].[Net Other Land Value], [Measures].[Net Other Building Value], [Measures].[Net General Total Value], [Measures].[Net General Land Value], [Measures].[Net General Building Value], [Measures].[Land Total Acres], [Measures].[Land Square Feet], [Measures].[Actual Total Value], [Measures].[Actual Land Value], [Measures].[Actual Building Value], [Measures].[Net School Land Value] } ON COLUMNS, NON EMPTY { ([Property].[Roll Number].[Roll Number].ALLMEMBERS * [Assessment Geography].[Roll Year].[Roll Year].ALLMEMBERS * [Assessment Geography].[Area Code].[Area Code].ALLMEMBERS * [Assessment Geography].[Jurisdiction Code].[Jurisdiction Code].ALLMEMBERS * [Assessment Geography].[Neighbourhood Code].[Neighbourhood Code].ALLMEMBERS * [School District].[School District Code].[School District Code].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS * [Regional District].[Regional District Code].[Regional District Code].ALLMEMBERS * [Regional Hospital District].[Region Hospital District Code].[Region Hospital District Code].ALLMEMBERS * [Electoral District].[Electoral District Code].[Electoral District Code].ALLMEMBERS * [Property].[SITUS Address Location Line 2].[SITUS Address Location Line 2].ALLMEMBERS * [Property].[SITUS Address Number Prefix].[SITUS Address Number Prefix].ALLMEMBERS * [Property].[SITUS Address Street Name].[SITUS Address Street Name].ALLMEMBERS * [Property].[SITUS Building Unit Number].[SITUS Building Unit Number].ALLMEMBERS * [Property].[SITUS City].[SITUS City].ALLMEMBERS * [Property].[SITUS Full Address].[SITUS Full Address].ALLMEMBERS * [Property].[SITUS Postal Code].[SITUS Postal Code].ALLMEMBERS * [Property].[SITUS Province].[SITUS Province].ALLMEMBERS * [Property].[SITUS Street Direction].[SITUS Street Direction].ALLMEMBERS * [Property].[SITUS Street Number].[SITUS Street Number].ALLMEMBERS * [Property].[SITUS Street Suffix].[SITUS Street Suffix].ALLMEMBERS * [Property].[SITUS Street Type].[SITUS Street Type].ALLMEMBERS * [Property].[SITUS Unit Description].[SITUS Unit Description].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Current Roll Cycle].[Current Cycle Flag].&amp;[Yes] } ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualUseActualUse, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])))))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyArea, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyArea, CONSTRAINED), [Assessment Geography].[Area].currentmember ), IIF( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED), [Assessment Geography].[Jurisdiction].currentmember ), IIF( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED), [Assessment Geography].[Neighbourhood].currentmember ), IIF( STRTOSET(@ActualUseActualUse, CONSTRAINED).Count = 1, STRTOSET(@ActualUseActualUse, CONSTRAINED), [Actual Use].[Actual Use].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ), [Current Roll Cycle].[Current Cycle Flag].&amp;[Yes] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -196,6 +196,28 @@
                   <Item>
                     <ID xsi:type="Level">
                       <DimensionName>Property</DimensionName>
+                      <HierarchyName>SITUS Address Location Line 2</HierarchyName>
+                      <HierarchyUniqueName>[Property].[SITUS Address Location Line 2]</HierarchyUniqueName>
+                      <LevelName>SITUS Address Location Line 2</LevelName>
+                      <UniqueName>[Property].[SITUS Address Location Line 2].[SITUS Address Location Line 2]</UniqueName>
+                    </ID>
+                    <ItemCaption>SITUS Address Location Line 2</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property</DimensionName>
+                      <HierarchyName>SITUS Address Number Prefix</HierarchyName>
+                      <HierarchyUniqueName>[Property].[SITUS Address Number Prefix]</HierarchyUniqueName>
+                      <LevelName>SITUS Address Number Prefix</LevelName>
+                      <UniqueName>[Property].[SITUS Address Number Prefix].[SITUS Address Number Prefix]</UniqueName>
+                    </ID>
+                    <ItemCaption>SITUS Address Number Prefix</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property</DimensionName>
                       <HierarchyName>SITUS Address Street Name</HierarchyName>
                       <HierarchyUniqueName>[Property].[SITUS Address Street Name]</HierarchyUniqueName>
                       <LevelName>SITUS Address Street Name</LevelName>
@@ -218,12 +240,45 @@
                   <Item>
                     <ID xsi:type="Level">
                       <DimensionName>Property</DimensionName>
+                      <HierarchyName>SITUS City</HierarchyName>
+                      <HierarchyUniqueName>[Property].[SITUS City]</HierarchyUniqueName>
+                      <LevelName>SITUS City</LevelName>
+                      <UniqueName>[Property].[SITUS City].[SITUS City]</UniqueName>
+                    </ID>
+                    <ItemCaption>SITUS City</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property</DimensionName>
+                      <HierarchyName>SITUS Full Address</HierarchyName>
+                      <HierarchyUniqueName>[Property].[SITUS Full Address]</HierarchyUniqueName>
+                      <LevelName>SITUS Full Address</LevelName>
+                      <UniqueName>[Property].[SITUS Full Address].[SITUS Full Address]</UniqueName>
+                    </ID>
+                    <ItemCaption>SITUS Full Address</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property</DimensionName>
                       <HierarchyName>SITUS Postal Code</HierarchyName>
                       <HierarchyUniqueName>[Property].[SITUS Postal Code]</HierarchyUniqueName>
                       <LevelName>SITUS Postal Code</LevelName>
                       <UniqueName>[Property].[SITUS Postal Code].[SITUS Postal Code]</UniqueName>
                     </ID>
                     <ItemCaption>SITUS Postal Code</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property</DimensionName>
+                      <HierarchyName>SITUS Province</HierarchyName>
+                      <HierarchyUniqueName>[Property].[SITUS Province]</HierarchyUniqueName>
+                      <LevelName>SITUS Province</LevelName>
+                      <UniqueName>[Property].[SITUS Province].[SITUS Province]</UniqueName>
+                    </ID>
+                    <ItemCaption>SITUS Province</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
@@ -246,6 +301,39 @@
                       <UniqueName>[Property].[SITUS Street Number].[SITUS Street Number]</UniqueName>
                     </ID>
                     <ItemCaption>SITUS Street Number</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property</DimensionName>
+                      <HierarchyName>SITUS Street Suffix</HierarchyName>
+                      <HierarchyUniqueName>[Property].[SITUS Street Suffix]</HierarchyUniqueName>
+                      <LevelName>SITUS Street Suffix</LevelName>
+                      <UniqueName>[Property].[SITUS Street Suffix].[SITUS Street Suffix]</UniqueName>
+                    </ID>
+                    <ItemCaption>SITUS Street Suffix</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property</DimensionName>
+                      <HierarchyName>SITUS Street Type</HierarchyName>
+                      <HierarchyUniqueName>[Property].[SITUS Street Type]</HierarchyUniqueName>
+                      <LevelName>SITUS Street Type</LevelName>
+                      <UniqueName>[Property].[SITUS Street Type].[SITUS Street Type]</UniqueName>
+                    </ID>
+                    <ItemCaption>SITUS Street Type</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Property</DimensionName>
+                      <HierarchyName>SITUS Unit Description</HierarchyName>
+                      <HierarchyUniqueName>[Property].[SITUS Unit Description]</HierarchyUniqueName>
+                      <LevelName>SITUS Unit Description</LevelName>
+                      <UniqueName>[Property].[SITUS Unit Description].[SITUS Unit Description]</UniqueName>
+                    </ID>
+                    <ItemCaption>SITUS Unit Description</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
@@ -295,6 +383,40 @@
                     <FontDecoration>true</FontDecoration>
                     <FormattedValue>true</FormattedValue>
                     <FormatString>true</FormatString>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Land Square Feet</MeasureName>
+                      <UniqueName>[Measures].[Land Square Feet]</UniqueName>
+                    </ID>
+                    <ItemCaption>Land Square Feet</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                    <DisplayFolder>Land</DisplayFolder>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Land Total Acres</MeasureName>
+                      <UniqueName>[Measures].[Land Total Acres]</UniqueName>
+                    </ID>
+                    <ItemCaption>Land Total Acres</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                    <DisplayFolder>Land</DisplayFolder>
                   </Item>
                   <Item>
                     <ID xsi:type="Measure">
@@ -628,7 +750,7 @@
               <QueryProperties />
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Net School Total Value], [Measures].[Net School Building Value], [Measures].[Net Other Total Value], [Measures].[Net Other Land Value], [Measures].[Net Other Building Value], [Measures].[Net General Total Value], [Measures].[Net General Land Value], [Measures].[Net General Building Value], [Measures].[Actual Total Value], [Measures].[Actual Land Value], [Measures].[Actual Building Value], [Measures].[Net School Land Value] } ON COLUMNS, NON EMPTY { ([Property].[Roll Number].[Roll Number].ALLMEMBERS * [Assessment Geography].[Roll Year].[Roll Year].ALLMEMBERS * [Assessment Geography].[Area Code].[Area Code].ALLMEMBERS * [Assessment Geography].[Jurisdiction Code].[Jurisdiction Code].ALLMEMBERS * [Assessment Geography].[Neighbourhood Code].[Neighbourhood Code].ALLMEMBERS * [School District].[School District Code].[School District Code].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS * [Regional District].[Regional District Code].[Regional District Code].ALLMEMBERS * [Regional Hospital District].[Region Hospital District Code].[Region Hospital District Code].ALLMEMBERS * [Electoral District].[Electoral District Code].[Electoral District Code].ALLMEMBERS * [Property].[SITUS Address Street Name].[SITUS Address Street Name].ALLMEMBERS * [Property].[SITUS Building Unit Number].[SITUS Building Unit Number].ALLMEMBERS * [Property].[SITUS Postal Code].[SITUS Postal Code].ALLMEMBERS * [Property].[SITUS Street Direction].[SITUS Street Direction].ALLMEMBERS * [Property].[SITUS Street Number].[SITUS Street Number].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Current Roll Cycle].[Current Cycle Flag].&amp;[Yes] } ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualUseActualUse, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])))))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyArea, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyArea, CONSTRAINED), [Assessment Geography].[Area].currentmember ), IIF( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED), [Assessment Geography].[Jurisdiction].currentmember ), IIF( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED), [Assessment Geography].[Neighbourhood].currentmember ), IIF( STRTOSET(@ActualUseActualUse, CONSTRAINED).Count = 1, STRTOSET(@ActualUseActualUse, CONSTRAINED), [Actual Use].[Actual Use].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ), [Current Roll Cycle].[Current Cycle Flag].&amp;[Yes] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Net School Total Value], [Measures].[Net School Building Value], [Measures].[Net Other Total Value], [Measures].[Net Other Land Value], [Measures].[Net Other Building Value], [Measures].[Net General Total Value], [Measures].[Net General Land Value], [Measures].[Net General Building Value], [Measures].[Land Total Acres], [Measures].[Land Square Feet], [Measures].[Actual Total Value], [Measures].[Actual Land Value], [Measures].[Actual Building Value], [Measures].[Net School Land Value] } ON COLUMNS, NON EMPTY { ([Property].[Roll Number].[Roll Number].ALLMEMBERS * [Assessment Geography].[Roll Year].[Roll Year].ALLMEMBERS * [Assessment Geography].[Area Code].[Area Code].ALLMEMBERS * [Assessment Geography].[Jurisdiction Code].[Jurisdiction Code].ALLMEMBERS * [Assessment Geography].[Neighbourhood Code].[Neighbourhood Code].ALLMEMBERS * [School District].[School District Code].[School District Code].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS * [Regional District].[Regional District Code].[Regional District Code].ALLMEMBERS * [Regional Hospital District].[Region Hospital District Code].[Region Hospital District Code].ALLMEMBERS * [Electoral District].[Electoral District Code].[Electoral District Code].ALLMEMBERS * [Property].[SITUS Address Location Line 2].[SITUS Address Location Line 2].ALLMEMBERS * [Property].[SITUS Address Number Prefix].[SITUS Address Number Prefix].ALLMEMBERS * [Property].[SITUS Address Street Name].[SITUS Address Street Name].ALLMEMBERS * [Property].[SITUS Building Unit Number].[SITUS Building Unit Number].ALLMEMBERS * [Property].[SITUS City].[SITUS City].ALLMEMBERS * [Property].[SITUS Full Address].[SITUS Full Address].ALLMEMBERS * [Property].[SITUS Postal Code].[SITUS Postal Code].ALLMEMBERS * [Property].[SITUS Province].[SITUS Province].ALLMEMBERS * [Property].[SITUS Street Direction].[SITUS Street Direction].ALLMEMBERS * [Property].[SITUS Street Number].[SITUS Street Number].ALLMEMBERS * [Property].[SITUS Street Suffix].[SITUS Street Suffix].ALLMEMBERS * [Property].[SITUS Street Type].[SITUS Street Type].ALLMEMBERS * [Property].[SITUS Unit Description].[SITUS Unit Description].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Current Roll Cycle].[Current Cycle Flag].&amp;[Yes] } ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualUseActualUse, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollYear, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary])))))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyArea, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyArea, CONSTRAINED), [Assessment Geography].[Area].currentmember ), IIF( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED), [Assessment Geography].[Jurisdiction].currentmember ), IIF( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED), [Assessment Geography].[Neighbourhood].currentmember ), IIF( STRTOSET(@ActualUseActualUse, CONSTRAINED).Count = 1, STRTOSET(@ActualUseActualUse, CONSTRAINED), [Actual Use].[Actual Use].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ), [Current Roll Cycle].[Current Cycle Flag].&amp;[Yes] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollYear</Name>
@@ -1248,9 +1370,17 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Regional Hospital District].[Region Hospital District Code].[Region Hospital District Code]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SITUS_Address_Location_Line_2">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Address Location Line 2].[SITUS Address Location Line 2]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Actual_Land_Value">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Actual Land Value]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SITUS_Address_Number_Prefix">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Address Number Prefix].[SITUS Address Number Prefix]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Electoral_District_Code">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Electoral District].[Electoral District Code].[Electoral District Code]" /&gt;</DataField>
@@ -1268,8 +1398,20 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Building Unit Number].[SITUS Building Unit Number]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="SITUS_City">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS City].[SITUS City]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SITUS_Full_Address">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Full Address].[SITUS Full Address]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="SITUS_Postal_Code">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Postal Code].[SITUS Postal Code]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SITUS_Province">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Province].[SITUS Province]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="SITUS_Street_Direction">
@@ -1278,6 +1420,18 @@
         </Field>
         <Field Name="SITUS_Street_Number">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Street Number].[SITUS Street Number]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SITUS_Street_Suffix">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Street Suffix].[SITUS Street Suffix]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SITUS_Street_Type">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Street Type].[SITUS Street Type]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SITUS_Unit_Description">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Property].[SITUS Unit Description].[SITUS Unit Description]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Net_General_Building_Value">
@@ -1300,8 +1454,16 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Net Other Land Value]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="Land_Square_Feet">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Land Square Feet]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="Net_Other_Total_Value">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Net Other Total Value]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Land_Total_Acres">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Land Total Acres]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Net_School_Building_Value">
@@ -1317,15 +1479,6 @@
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
-      <Filters>
-        <Filter>
-          <FilterExpression>=Fields!Actual_Land_Value.Value</FilterExpression>
-          <Operator>GreaterThan</Operator>
-          <FilterValues>
-            <FilterValue DataType="Integer">0</FilterValue>
-          </FilterValues>
-        </Filter>
-      </Filters>
     </DataSet>
     <DataSet Name="AssessmentGeographyArea">
       <Query>
@@ -9388,7 +9541,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox22">
+                        <Textbox Name="Textbox23">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -9406,7 +9559,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <rd:DefaultName>Textbox23</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -9456,6 +9609,40 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
+                        <Textbox Name="Textbox22">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
                         <Textbox Name="Textbox11">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -9475,40 +9662,6 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox11</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox6">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value />
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -9554,7 +9707,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -9899,7 +10051,7 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox23">
+                        <Textbox Name="Textbox6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -9917,7 +10069,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox23</rd:DefaultName>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
