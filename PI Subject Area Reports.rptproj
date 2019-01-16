@@ -111,10 +111,6 @@
       <FullPath>MinorTaxingJursidictionsByPropertyKey.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Multi Select Parameter example.rdl</Name>
-      <FullPath>Multi Select Parameter example.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Owners.rdl</Name>
       <FullPath>Owners.rdl</FullPath>
     </ProjectItem>
