@@ -95,24 +95,8 @@
       <FullPath>AllValuesByPropertySubClass.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BobsParameterExample.rdl</Name>
-      <FullPath>BobsParameterExample.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Building Information Extract.rdl</Name>
       <FullPath>Building Information Extract.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Detail Report (cascading prompts) Template.rdl</Name>
-      <FullPath>Detail Report (cascading prompts) Template.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Detail Report Template.rdl</Name>
-      <FullPath>Detail Report Template.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Folio Count and Average Value.rdl</Name>
-      <FullPath>Folio Count and Average Value.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Folio Detail.rdl</Name>
@@ -143,16 +127,8 @@
       <FullPath>Residential Inventory - All Measures Yearly Comparson - OLAP.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Residential Inventory Extract.rdl</Name>
-      <FullPath>Residential Inventory Extract.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Roll Detail.rdl</Name>
       <FullPath>Roll Detail.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Roll Totals.rdl</Name>
-      <FullPath>Roll Totals.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>RollTotalMinorTaxJR.rdl</Name>
@@ -161,18 +137,6 @@
     <ProjectItem>
       <Name>RollTotalMinorTaxRD.rdl</Name>
       <FullPath>RollTotalMinorTaxRD.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Selection Criteria.rdl</Name>
-      <FullPath>Selection Criteria.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Service Agreements.rdl</Name>
-      <FullPath>Service Agreements.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Summary Report Template.rdl</Name>
-      <FullPath>Summary Report Template.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
