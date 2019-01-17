@@ -129,7 +129,7 @@
             <Value>=Parameters!AssessmentGeographyArea.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText> SELECT NON EMPTY { [Measures].[Land Depth], [Measures].[Assessed Building Value], [Measures].[Assessed Land Value], [Measures].[Land Square Feet], [Measures].[Assessed Total Value] } ON COLUMNS, NON EMPTY { ([Assessment Geography].[Area].[Area].ALLMEMBERS * [Assessment Geography].[Jurisdiction].[Jurisdiction].ALLMEMBERS * [Property].[Roll Number].[Roll Number].ALLMEMBERS * [Property].[SITUS Full Address].[SITUS Full Address].ALLMEMBERS * [Property].[SITUS Unit Description].[SITUS Unit Description].ALLMEMBERS * [Property].[SITUS Building Unit Number].[SITUS Building Unit Number].ALLMEMBERS * [Property].[SITUS Street Number].[SITUS Street Number].ALLMEMBERS * [Property].[Street Direction Prefix].[Street Direction Prefix].ALLMEMBERS * [Property].[Street Name].[Street Name].ALLMEMBERS * [Property].[SITUS Street Type].[SITUS Street Type].ALLMEMBERS * [Property].[SITUS City].[SITUS City].ALLMEMBERS * [Parcel].[Parcel].[Parcel].ALLMEMBERS * [Parcel].[Legal Description].[Legal Description].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Predominant Building].[Year Built].[Year Built].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary]))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED), [Assessment Geography].[Neighbourhood].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText> SELECT NON EMPTY { [Measures].[Assessed Total Value], [Measures].[Assessed Land Value], [Measures].[Assessed Building Value] } ON COLUMNS, NON EMPTY { ([Assessment Geography].[Area].[Area].ALLMEMBERS * [Assessment Geography].[Jurisdiction].[Jurisdiction].ALLMEMBERS * [Property].[Roll Number].[Roll Number].ALLMEMBERS * [Property].[SITUS Full Address].[SITUS Full Address].ALLMEMBERS * [Property].[SITUS Unit Description].[SITUS Unit Description].ALLMEMBERS * [Property].[SITUS Building Unit Number].[SITUS Building Unit Number].ALLMEMBERS * [Property].[SITUS Street Number].[SITUS Street Number].ALLMEMBERS * [Property].[Street Direction Prefix].[Street Direction Prefix].ALLMEMBERS * [Property].[Street Name].[Street Name].ALLMEMBERS * [Property].[SITUS Street Type].[SITUS Street Type].ALLMEMBERS * [Property].[SITUS City].[SITUS City].ALLMEMBERS * [Parcel].[Parcel].[Parcel].ALLMEMBERS * [Parcel].[Legal Description].[Legal Description].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Predominant Building].[Year Built].[Year Built].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary]))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED), [Assessment Geography].[Neighbourhood].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -325,23 +325,6 @@
                   </Item>
                   <Item>
                     <ID xsi:type="Measure">
-                      <MeasureName>Land Square Feet</MeasureName>
-                      <UniqueName>[Measures].[Land Square Feet]</UniqueName>
-                    </ID>
-                    <ItemCaption>Land Square Feet</ItemCaption>
-                    <BackColor>true</BackColor>
-                    <ForeColor>true</ForeColor>
-                    <FontFamily>true</FontFamily>
-                    <FontSize>true</FontSize>
-                    <FontWeight>true</FontWeight>
-                    <FontStyle>true</FontStyle>
-                    <FontDecoration>true</FontDecoration>
-                    <FormattedValue>true</FormattedValue>
-                    <FormatString>true</FormatString>
-                    <DisplayFolder>Land</DisplayFolder>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Measure">
                       <MeasureName>Assessed Land Value</MeasureName>
                       <UniqueName>[Measures].[Assessed Land Value]</UniqueName>
                     </ID>
@@ -387,23 +370,6 @@
                     <FontDecoration>true</FontDecoration>
                     <FormattedValue>true</FormattedValue>
                     <FormatString>true</FormatString>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Measure">
-                      <MeasureName>Land Depth</MeasureName>
-                      <UniqueName>[Measures].[Land Depth]</UniqueName>
-                    </ID>
-                    <ItemCaption>Land Depth</ItemCaption>
-                    <BackColor>true</BackColor>
-                    <ForeColor>true</ForeColor>
-                    <FontFamily>true</FontFamily>
-                    <FontSize>true</FontSize>
-                    <FontWeight>true</FontWeight>
-                    <FontStyle>true</FontStyle>
-                    <FontDecoration>true</FontDecoration>
-                    <FormattedValue>true</FormattedValue>
-                    <FormatString>true</FormatString>
-                    <DisplayFolder>Land</DisplayFolder>
                   </Item>
                 </Items>
               </Select>
@@ -563,7 +529,7 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Land Depth], [Measures].[Assessed Building Value], [Measures].[Assessed Land Value], [Measures].[Land Square Feet], [Measures].[Assessed Total Value] } ON COLUMNS, NON EMPTY { ([Assessment Geography].[Area].[Area].ALLMEMBERS * [Assessment Geography].[Jurisdiction].[Jurisdiction].ALLMEMBERS * [Property].[Roll Number].[Roll Number].ALLMEMBERS * [Property].[SITUS Full Address].[SITUS Full Address].ALLMEMBERS * [Property].[SITUS Unit Description].[SITUS Unit Description].ALLMEMBERS * [Property].[SITUS Building Unit Number].[SITUS Building Unit Number].ALLMEMBERS * [Property].[SITUS Street Number].[SITUS Street Number].ALLMEMBERS * [Property].[Street Direction Prefix].[Street Direction Prefix].ALLMEMBERS * [Property].[Street Name].[Street Name].ALLMEMBERS * [Property].[SITUS Street Type].[SITUS Street Type].ALLMEMBERS * [Property].[SITUS City].[SITUS City].ALLMEMBERS * [Parcel].[Parcel].[Parcel].ALLMEMBERS * [Parcel].[Legal Description].[Legal Description].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Predominant Building].[Year Built].[Year Built].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary]))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED), [Assessment Geography].[Neighbourhood].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Assessed Total Value], [Measures].[Assessed Land Value], [Measures].[Assessed Building Value] } ON COLUMNS, NON EMPTY { ([Assessment Geography].[Area].[Area].ALLMEMBERS * [Assessment Geography].[Jurisdiction].[Jurisdiction].ALLMEMBERS * [Property].[Roll Number].[Roll Number].ALLMEMBERS * [Property].[SITUS Full Address].[SITUS Full Address].ALLMEMBERS * [Property].[SITUS Unit Description].[SITUS Unit Description].ALLMEMBERS * [Property].[SITUS Building Unit Number].[SITUS Building Unit Number].ALLMEMBERS * [Property].[SITUS Street Number].[SITUS Street Number].ALLMEMBERS * [Property].[Street Direction Prefix].[Street Direction Prefix].ALLMEMBERS * [Property].[Street Name].[Street Name].ALLMEMBERS * [Property].[SITUS Street Type].[SITUS Street Type].ALLMEMBERS * [Property].[SITUS City].[SITUS City].ALLMEMBERS * [Parcel].[Parcel].[Parcel].ALLMEMBERS * [Parcel].[Legal Description].[Legal Description].ALLMEMBERS * [Manual Class].[Manual Class Code].[Manual Class Code].ALLMEMBERS * [Predominant Building].[Year Built].[Year Built].ALLMEMBERS * [Predominant Building].[Effective Year].[Effective Year].ALLMEMBERS * [Actual Use].[Actual Use Code].[Actual Use Code].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@ManualClassManualClass, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyJurisdiction, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyArea, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED) ) ON COLUMNS FROM ( SELECT ( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED) ) ON COLUMNS FROM [Property Inventory Roll Summary]))))))))))))) WHERE ( IIF( STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRollCategory, CONSTRAINED), [Assessment Geography].[Roll Category].currentmember ), IIF( STRTOSET(@AssessmentGeographyRegion, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyRegion, CONSTRAINED), [Assessment Geography].[Region].currentmember ), IIF( STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED).Count = 1, STRTOSET(@AssessmentGeographyNeighbourhood, CONSTRAINED), [Assessment Geography].[Neighbourhood].currentmember ), IIF( STRTOSET(@ManualClassManualClass, CONSTRAINED).Count = 1, STRTOSET(@ManualClassManualClass, CONSTRAINED), [Manual Class].[Manual Class].currentmember ), IIF( STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED).Count = 1, STRTOSET(@ActualValueRangeActualValueRange, CONSTRAINED), [Actual Value Range].[Actual Value Range].currentmember ), IIF( STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED).Count = 1, STRTOSET(@YearBuiltRangeYearBuiltRange, CONSTRAINED), [Year Built Range].[Year Built Range].currentmember ), IIF( STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED).Count = 1, STRTOSET(@YearEffectiveRangeYearEffectiveRange, CONSTRAINED), [Year Effective Range].[Year Effective Range].currentmember ), IIF( STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED).Count = 1, STRTOSET(@TotalAreaRangeTotalAreaRange, CONSTRAINED), [Total Area Range].[Total Area Range].currentmember ), IIF( STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED).Count = 1, STRTOSET(@StoreyRangeStoreyRange, CONSTRAINED), [Storey Range].[Storey Range].currentmember ), IIF( STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BathroomsRangeBathroomsRange, CONSTRAINED), [Bathrooms Range].[Bathrooms Range].currentmember ), IIF( STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED).Count = 1, STRTOSET(@BedroomRangeBedroomsRange, CONSTRAINED), [Bedroom Range].[Bedrooms Range].currentmember ) ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions>
                 <ParameterDefinition>
                   <Name>AssessmentGeographyRollCategory</Name>
@@ -1072,10 +1038,6 @@
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Parcel].[Parcel].[Parcel]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Land_Square_Feet">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Land Square Feet]" /&gt;</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="Legal_Description">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Parcel].[Legal Description].[Legal Description]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -1095,10 +1057,6 @@
         <Field Name="Actual_Use_Code">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Actual Use].[Actual Use Code].[Actual Use Code]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Land_Depth">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Land Depth]" /&gt;</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Assessed_Land_Value">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Assessed Land Value]" /&gt;</DataField>
@@ -6397,14 +6355,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Land_Square_Feet">
+                        <Textbox Name="Textbox6">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Land_Square_Feet.Value</Value>
+                                  <Value />
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -6413,7 +6371,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Land_Square_Feet</rd:DefaultName>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -6429,14 +6387,14 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Land_Depth1">
+                        <Textbox Name="Textbox2">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Land_Depth.Value</Value>
+                                  <Value />
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -6445,7 +6403,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Land_Depth1</rd:DefaultName>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
