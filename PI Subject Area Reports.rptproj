@@ -21,10 +21,6 @@
   </DataSources>
   <DataSets>
     <ProjectItem>
-      <Name>Copy of qryDataRoll.rsd</Name>
-      <FullPath>Copy of qryDataRoll.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>DsCurrentYear.rsd</Name>
       <FullPath>DsCurrentYear.rsd</FullPath>
     </ProjectItem>
@@ -196,8 +192,8 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2016</TargetServerVersion>
-        <TargetServerURL>https://businessanalyticssystem.bcassessment.ca/ReportServer</TargetServerURL>
-        <TargetFolder>Enterprise/Assessment (Internal)/Property Inventory</TargetFolder>
+        <TargetServerURL>https://businessanalyticssystempowerbi.bcassessment.ca/PBIReports</TargetServerURL>
+        <TargetFolder>Sandbox/Enterprise UAT/Internal/Property Inventory</TargetFolder>
         <TargetMobileReportFolder>Mobile Reports</TargetMobileReportFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>

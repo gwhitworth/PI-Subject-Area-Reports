@@ -9,6 +9,7 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default
 		DebugLocal|Default = DebugLocal|Default
+		Prod|Default = Prod|Default
 		Release|Default = Release|Default
 		Test|Default = Test|Default
 		UAT|Default = UAT|Default
@@ -19,6 +20,9 @@ Global
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Debug|Default.Deploy.0 = Debug
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.DebugLocal|Default.ActiveCfg = DebugLocal
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.DebugLocal|Default.Build.0 = DebugLocal
+		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Prod|Default.ActiveCfg = Prod
+		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Prod|Default.Build.0 = Prod
+		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Prod|Default.Deploy.0 = Prod
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Release|Default.ActiveCfg = Release
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Release|Default.Build.0 = Release
 		{1DFC55B9-88A6-48E1-A4BD-FDE453432166}.Release|Default.Deploy.0 = Release
