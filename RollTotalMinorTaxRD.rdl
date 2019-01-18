@@ -453,7 +453,7 @@ ORDER BY [RD].[Regional District Code]</CommandText>
 FROM [EDW].[edw].[dimMinorTaxCode]
 WHERE [Roll Year] = @p_RY
       AND [Minor Tax Category Code] = @p_MTC
-      AND [Regional District Code] = @p_RD
+      AND [Regional District Code] in (@p_RD)
 ORDER BY [Minor Tax Label];</CommandText>
       </Query>
       <Fields>
