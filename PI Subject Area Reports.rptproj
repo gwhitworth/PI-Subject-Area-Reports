@@ -14,10 +14,6 @@
       <Name>OLAP.rds</Name>
       <FullPath>OLAP.rds</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>OLAP_DEV.rds</Name>
-      <FullPath>OLAP_DEV.rds</FullPath>
-    </ProjectItem>
   </DataSources>
   <DataSets>
     <ProjectItem>

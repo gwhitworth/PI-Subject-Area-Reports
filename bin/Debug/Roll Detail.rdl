@@ -8827,7 +8827,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -12529,11 +12528,6 @@
     </ReportParameter>
     <ReportParameter Name="AssessmentGeographyJurisdiction">
       <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>[Assessment Geography].[Jurisdiction].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>Jurisdiction</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -12546,11 +12540,6 @@
     </ReportParameter>
     <ReportParameter Name="AssessmentGeographyNeighbourhood">
       <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>[Assessment Geography].[Neighbourhood].&amp;[1 - Provincial Roll]&amp;[VANCOUVER ISLAND]&amp;[01 - VANCOUVER ISLAND (01)]&amp;[01 - Capital]&amp;[234 - Victoria (234)]&amp;[234010 - DOWNTOWN COMM DOUGLAS ST AREA]</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>Neighbourhood</Prompt>
       <ValidValues>
         <DataSetReference>
