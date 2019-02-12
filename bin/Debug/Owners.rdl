@@ -92,7 +92,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Current Owners: (as of ???? working roll year)</Value>
+                    <Value>="Current Owners: (as of " +Parameters!p_RollYear.Value + " working roll year)"</Value>
                     <Style>
                       <FontWeight>Bold</FontWeight>
                     </Style>
